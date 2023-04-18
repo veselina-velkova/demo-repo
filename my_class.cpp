@@ -1,3 +1,9 @@
+//@file: my_class.cpp
+//@author: Veselina Velkova (veselina.velkova@strypes.eu)
+//@description: This contains the implementation of the student class.
+//@version: 0.1
+//@date: 18.04.2023
+
 #include "my_class.h"
 #include <iostream>
 

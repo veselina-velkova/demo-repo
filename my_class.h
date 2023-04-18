@@ -1,6 +1,7 @@
 //@file: my_class.h
-//@author: Veselina Velkova
+//@author: Veselina Velkova (veselina.velkova@strypes.eu)
 //@brief: This file contains the prototypes of the functions in the student class.
+//@version: 0.1
 //@date: 18.04.2023
 
 #pragma once
