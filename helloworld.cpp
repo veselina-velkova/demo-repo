@@ -8,10 +8,9 @@ void yolina()
 int main()
 {
     int a = 3, b = 5;
-    std::cout<< a + b;
+    std::cout<< "a + b = " << a + b;
 
-    std::cout<<"Hello, World!"<<std::endl;
+    std::cout<<"Hello, World, again!"<<std::endl;
 
-    yolina();
     return 0;
 }
