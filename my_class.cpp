@@ -84,7 +84,7 @@ float student::getAverageGrade()
     }
     else
     {
-        return sum / numberGrades;
+        return (sum / numberGrades);
     } 
 }
 
