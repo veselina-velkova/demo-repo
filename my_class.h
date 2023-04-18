@@ -24,16 +24,20 @@ class student
 
     public:
     student();
+    ~student();
+
     int getNumber();
     std::string getName();
+    int getNumberGrades();
+    float* getGrades();
+
     void setNumber(int num);
     void setName(std::string newName);
-    int getNumberGrades();
+    
+    /* Class Methods */
     void addNewGrade(float grade);
-    bool areGrades();
+    bool areGradesRecieved();
     float getAverageGrade();
     float getMaxGrade();
     float getMinGrade();
-    float* getGrades();
-    ~student();
 };

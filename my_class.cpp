@@ -70,16 +70,16 @@ void student::addNewGrade(float grade)
     numberGrades += 1;
 }
 
-bool student::areGrades()
+bool student::areGradesRecieved()
 {
     return bool(numberGrades);
 }
 
 float student::getAverageGrade()
 {
-    if(!areGrades())
+    if(!areGradesRecieved())
     {
-        cout<<"Can not give average for zero grades."<<endl;
+        cout<<"Cannot calculate average when no grades present."<<endl;
         return -1;
     }
     else
@@ -90,9 +90,9 @@ float student::getAverageGrade()
 
 float student::getMaxGrade()
 {
-    if(!areGrades())
+    if(!areGradesRecieved())
     {
-        cout << "Can not find maximum grade out of zero grades." << endl;
+        cout << "Cannot find maximum grade when no grades exist yet." << endl;
         return -1;
     }
     else
@@ -111,9 +111,9 @@ float student::getMaxGrade()
 
 float student::getMinGrade()
 {
-    if(!areGrades())
+    if(!areGradesRecieved())
     {
-        cout << "Can not find minimum grade out of zero grades." << endl;
+        cout << "Cannot find minimum grade when no grades exist yet." << endl;
         return -1;
     }
     else
@@ -149,14 +149,14 @@ student::~student()
 int main()
 {
     student Petar;
-    cout << Petar.areGrades() << endl;
+    cout << Petar.areGradesRecieved() << endl;
     Petar.addNewGrade(5.5);
     Petar.addNewGrade(3.2);
     Petar.addNewGrade(6.00);
     Petar.addNewGrade(5.2);
     Petar.addNewGrade(4.6);
     Petar.addNewGrade(2.2);
-    cout << Petar.areGrades() << endl;;
+    cout << Petar.areGradesRecieved() << endl;;
     cout << Petar.getAverageGrade() << endl;
     cout << Petar.getMaxGrade() << endl;
     cout << Petar.getMinGrade() << endl;
