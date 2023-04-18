@@ -12,6 +12,5 @@ int main()
 
     std::cout<<"Hello, World, again!"<<std::endl;
 
-    yolina();
     return 0;
 }
