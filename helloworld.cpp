@@ -8,8 +8,10 @@ void yolina()
 int main()
 {
     int a = 3, b = 5;
+    std::cout<< a * b;
     std::cout<< "a + b = " << a + b;
 
+    std::cout<<"Hi, my name is Veselina."<<std::endl;
     std::cout<<"Hello, World, again!"<<std::endl;
 
     return 0;
