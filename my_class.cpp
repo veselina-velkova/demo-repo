@@ -15,6 +15,12 @@ using std::string;
 void student::resizeGrades()
 {
     float* newGrades = new float [currentCapacity*2];
+    float* newGrades = new (std::nothrow) float [currentCapacity*2];
+    if (!newGrades)
+    {
+        std::cerr << "Problems with allocating memory in the resizeGrades function." << endl;
+        throw std::bad_alloc();
+    }
     for (int i = 0; i < currentCapacity; i++)
     {
         newGrades[i] = grades[i];
@@ -32,7 +38,25 @@ student::student()
     cout << "What's the student's name?" << endl;
     cin.ignore();
     getline(cin, name);
+    if (!(cin >> number))
+    {
+        cout << "VESI ERROR";
+    }
+    if (cin.fail())
+    {
+        cout << "YOLINA";
+    }
+    //cout << "What's the student's name?"  << endl;
+    //cin >> name;
+    //cin.ignore();
+    // getline(cin, name);
     numberGrades = 0;
+}
+
+student::student(int num, std::string full_name)
+{
+    number = num;
+    name = full_name;
 }
 
 int student::getNumber()

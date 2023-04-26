@@ -25,6 +25,7 @@ class student
 
     public:
     student();
+    student(int num, std::string full_name);
     ~student();
 
     int getNumber();
