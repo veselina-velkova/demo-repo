@@ -2,7 +2,6 @@
 #include<string>
 #include<list>
 #include<sstream>
-#include<algorithm>
 #include<iostream>
 
 /*
@@ -90,6 +89,6 @@ int main()
     merge(trainA, trainB, strFinalConfig, listFinalConfig);
     std::cout << strFinalConfig << std::endl;
     print(listFinalConfig);
-    
+
     return 0;
 }
