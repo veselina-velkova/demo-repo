@@ -61,6 +61,5 @@ int main()
     const std::string input = readInput();
     const result separatedData = separateInput(input);
     print(separatedData);
-    
     return 0;
 }
