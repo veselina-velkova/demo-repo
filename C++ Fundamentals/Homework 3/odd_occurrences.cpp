@@ -51,9 +51,16 @@ void print(const std::map<std::string, size_t>& countingOccurrences, std::queue<
     while(!sequence.empty())
     {
         const std::string key = sequence.front();
-        if(countingOccurrences.at(key) % 2 == 1)
+        try
         {
-            std::cout << key << " ";
+            if(countingOccurrences.at(key) % 2 == 1)
+            {
+                std::cout << key << " ";
+            }
+        }
+        catch (std::out_of_range)
+        {
+            std::cerr << "Unexpected error with the elements in the queue." << std::endl;
         }
         sequence.pop();
     }
