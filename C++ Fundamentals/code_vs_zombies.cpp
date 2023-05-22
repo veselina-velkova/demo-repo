@@ -50,7 +50,7 @@ void findTheMinDistBetweenPersonAndAZombie(const std::vector<Human>& humans, std
         {
             //We have to check is it possible to save him. Aka to go there before the zombie.
             int distToAsh = dist(human.coordinates.first, human.coordinates.second, AshX, AshY);
-            if((zombieMinDist / 400.0) >= std::max(distToAsh - 2000, 0) / 1000.0)
+            if((zombieMinDist / 400.0) >= std::max((distToAsh - 2000), 0) / 1000.0)
             {
                 //Because we should kill the thread, not just stick with the person.
                 target.first = closestZombie->coordinates.first;
@@ -68,7 +68,8 @@ bool isAshClosestToAllZombies(int AshX, int AshY, const std::vector<Zombie>& zom
         int distZombieAsh = dist(AshX, AshY, zombie.coordinates.first, zombie.coordinates.second);
         for(auto& human : humans)
         {
-            if(dist(human.coordinates.first, human.coordinates.second, zombie.coordinates.first, zombie.coordinates.second) < distZombieAsh)
+            if(dist(human.coordinates.first, human.coordinates.second, 
+                        zombie.coordinates.first, zombie.coordinates.second) < distZombieAsh)
             {
                 return false;
             }
