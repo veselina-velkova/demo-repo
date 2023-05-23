@@ -1,10 +1,11 @@
-#include <string>
 #include <vector>
 #include <cmath>
-#include <utility>
 #include <algorithm>
 #include <iostream>
 
+constexpr double UNITS_PER_STEP_ZOMBIE = 400.0;
+constexpr double UNITS_PER_STEP_ASH = 1000.0;
+constexpr int SHOOTING_RADIUS = 2000;
 struct Zombie
 {
     int zombieId{};
@@ -50,7 +51,7 @@ void findTheMinDistBetweenPersonAndAZombie(const std::vector<Human>& humans, std
         {
             //We have to check is it possible to save him. Aka to go there before the zombie.
             int distToAsh = dist(human.coordinates.first, human.coordinates.second, AshX, AshY);
-            if((zombieMinDist / 400.0) >= std::max((distToAsh - 2000), 0) / 1000.0)
+            if((zombieMinDist / UNITS_PER_STEP_ZOMBIE) >= std::max((distToAsh - SHOOTING_RADIUS), 0) / UNITS_PER_STEP_ASH)
             {
                 //Because we should kill the thread, not just stick with the person.
                 target.first = closestZombie->coordinates.first;
@@ -142,3 +143,6 @@ int main()
         std::cout << target.first <<" "<<target.second << std::endl; 
     }
 }
+//NOTE: Prefer return values compared to out parameters when returning values from a method!
+//For futute improvements - try to iterate over the ideas shared at the end of the Final Project Defense recording.
+//Dijkstra; Try to go as many steps as possible ahead of the current moment!
