@@ -7,56 +7,47 @@
 #include "my_class.h"
 #include <iostream>
 
-using std::cin;
-using std::cout;
-using std::endl;
-using std::string;
-
-void student::resizeGrades()
-{
-    float* newGrades = new float [currentCapacity*2];
-    float* newGrades = new (std::nothrow) float [currentCapacity*2];
-    if (!newGrades)
-    {
-        std::cerr << "Problems with allocating memory in the resizeGrades function." << endl;
-        throw std::bad_alloc();
-    }
-    for (int i = 0; i < currentCapacity; i++)
-    {
-        newGrades[i] = grades[i];
-    }
-    delete[] grades;
-    currentCapacity *= 2;
-    grades = newGrades;
-    newGrades = nullptr;
-}
-
 student::student()
 {
-    cout << "What is student's number in class?" << endl;
-    cin >> number;
-    cout << "What's the student's name?" << endl;
-    cin.ignore();
-    getline(cin, name);
-    if (!(cin >> number))
+    while(true)
     {
-        cout << "VESI ERROR";
-    }
-    if (cin.fail())
+        std::cout << "What is student's number in class?" << '\n';
+        std::cin >> number;
+        if(!std::cin)
+        {
+            std::cerr << "Read invalid data for student's number in class!"<<std::endl;
+            std::cin.clear();
+            std::cin.ignore();
+        }
+        else
+        {
+            break;
+        }
+    }    
+    std::cin.ignore();
+    while(true)
     {
-        cout << "YOLINA";
+        std::cout << "What's the student's name?" << '\n';
+        getline(std::cin, name);
+        if(!std::cin)
+        {
+            std::cerr << "Read invalid data for the student's name!" << std::endl;
+            std::cin.clear();
+            std::cin.ignore();
+        }
+        else
+        {
+            break;
+        }
     }
-    //cout << "What's the student's name?"  << endl;
-    //cin >> name;
-    //cin.ignore();
-    // getline(cin, name);
-    numberGrades = 0;
+    grades.resize(MIN_GRADES);
 }
 
-student::student(int num, std::string full_name)
+student::student(int num, const std::string& full_name)
 {
     number = num;
     name = full_name;
+    grades.resize(MIN_GRADES);
 }
 
 int student::getNumber()
@@ -64,7 +55,7 @@ int student::getNumber()
     return number;
 }
 
-string student::getName()
+std::string student::getName()
 {
     return name;
 }
@@ -74,122 +65,87 @@ void student::setNumber(int num)
     number = num;
 }
 
-void student::setName(string newName)
+void student::setName(const std::string& new_name)
 {
-    name = newName;
+    name.clear();
+    name = new_name;
 }
     
 int student::getNumberGrades()
 {
-    return numberGrades;
+    return grades.size();
 }
 
 void student::addNewGrade(float grade)
 {
-    if(numberGrades == MAX_GRADES)
+    if(getNumberGrades() == MAX_GRADES)
     {
-        cout << "This student has enough grades. " << endl;
+        std::cerr << "This student has enough grades. " << std::endl;
         return;
     }
-    if(currentCapacity == numberGrades)
-    {
-        resizeGrades();
-    }
-    grades[numberGrades] = grade;
+    grades.push_back(grade);
     sum += grade;
-    numberGrades += 1;
 }
 
 bool student::areGradesRecieved()
 {
-    return bool(numberGrades);
+    return grades.empty();
 }
 
 float student::getAverageGrade()
 {
     if(!areGradesRecieved())
     {
-        cout<<"Cannot calculate average when no grades present."<<endl;
-        return -1;
+        throw std::logic_error("Cannot calculate average when no grades present.");
     }
-    else
-    {
-        return (sum / numberGrades);
-    } 
+    return (sum / getNumberGrades());
 }
 
 float student::getMaxGrade()
 {
     if(!areGradesRecieved())
     {
-        cout << "Cannot find maximum grade when no grades exist yet." << endl;
-        return -1;
+        throw std::logic_error("Cannot find maximum grade when no grades exist yet.");
     }
-    else
+    float maxGrade = grades.front();
+    for(float grade : grades)
     {
-        float maxGrade = grades[0];
-        for(int i = 1; i < numberGrades; i++)
+        if(grade > maxGrade)
         {
-            if(grades[i] > maxGrade)
-            {
-                maxGrade = grades[i];
-            }
+            maxGrade = grade;
         }
-        return maxGrade;
     }
+    return maxGrade;
 }
 
 float student::getMinGrade()
 {
     if(!areGradesRecieved())
     {
-        cout << "Cannot find minimum grade when no grades exist yet." << endl;
-        return -1;
+        throw std::logic_error("Cannot find minimum grade when no grades exist yet.");
     }
-    else
+    float minGrade = grades.front();
+    for(float grade : grades)
     {
-        float minGrade = grades[0];
-        for(int i = 1; i < numberGrades; i++)
+        if(grade < minGrade)
         {
-            if(grades[i] < minGrade)
-            {
-                minGrade = grades[i];
-            }
+            minGrade = grade;
         }
-        return minGrade;
     }
+    return minGrade;
 }
 
-float* student::getGrades()
+std::vector<float> student::getGrades()
 {
-    for (int i = 0; i < numberGrades; i++)
+    for (auto it = grades.begin(); it != grades.end(); ++it)
     {
-        cout << grades[i] << " ";
+        std::cout << *it << " ";
     }
-    cout << endl;
+    std::cout << std::endl;
     return grades;
-}
-
-student::~student()
-{
-    delete[] grades;
-    grades = nullptr;
 }
 
 int main()
 {
-    student Petar;
-    cout << Petar.areGradesRecieved() << endl;
-    Petar.addNewGrade(5.5);
-    Petar.addNewGrade(3.2);
-    Petar.addNewGrade(6.00);
-    Petar.addNewGrade(5.2);
-    Petar.addNewGrade(4.6);
-    Petar.addNewGrade(2.2);
-    cout << Petar.areGradesRecieved() << endl;;
-    cout << Petar.getAverageGrade() << endl;
-    cout << Petar.getMaxGrade() << endl;
-    cout << Petar.getMinGrade() << endl;
-    
     return 0;
 }

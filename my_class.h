@@ -6,6 +6,7 @@
 
 #pragma once
 #include<string>
+#include<vector>
 
 //These constants are useful because in real life students can not have infinite number of grades.
 //Usually, for each subject there is minimum and maximum number of grades that each student should have. 
@@ -14,27 +15,22 @@ const int MAX_GRADES = 20;
 
 class student
 {
-    std::string name;
-    int number;
-    int numberGrades;
-    int currentCapacity = 5;
-    float sum = 0.0;
-    float* grades = new float [currentCapacity];
-
-    void resizeGrades();
+    std::string name{};
+    int number{};
+    float sum{};
+    std::vector<float> grades{};
 
     public:
     student();
-    student(int num, std::string full_name);
-    ~student();
+    student(int num, const std::string& full_name);
 
     int getNumber();
     std::string getName();
     int getNumberGrades();
-    float* getGrades();
+    std::vector<float> getGrades();
 
     void setNumber(int num);
-    void setName(std::string newName);
+    void setName(const std::string& newName);
     
     /* Class Methods */
     void addNewGrade(float grade);
