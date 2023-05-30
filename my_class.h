@@ -6,7 +6,8 @@
 //Usually, for each subject there is minimum and maximum number of grades that each student should have. 
 const int MIN_GRADES = 5;
 const int MAX_GRADES = 20;
-
+const float LOWEST_GRADE = 2.f;
+const float HIGHEST_GRADE = 6.f;
 class student
 {
    std::string name{};

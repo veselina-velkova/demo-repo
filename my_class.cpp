@@ -56,7 +56,7 @@ student::student(const int num, const std::string& full_name)
 
 bool student::isValidGrade(const float grade)
 {
-   return (grade >= 2 && grade <= 6);
+   return (grade >= LOWEST_GRADE && grade <= HIGHEST_GRADE);
 }
 
 bool student::isValidName(const std::string& new_name)
@@ -106,7 +106,7 @@ void student::addNewGrade(float grade)
    if(getNumberGrades() == MAX_GRADES)
    {
       std::cerr << "This student has enough grades. " << std::endl;
-      return;
+      throw std::length_error("Unable to add a new grade, because this student has already enough!");
    }
    if(!isValidGrade(grade))
    {
@@ -118,7 +118,7 @@ void student::addNewGrade(float grade)
 
 bool student::areGradesRecieved()
 {
-   return grades.empty();
+   return (!grades.empty());
 }
 
 float student::getAverageGrade()
