@@ -18,7 +18,6 @@ class student
    bool isValidGrade(const float grade);
 
    public:
-   //student();
    student(const int num, const std::string& full_name);
 
    int getNumber();

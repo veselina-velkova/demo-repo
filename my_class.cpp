@@ -1,45 +1,6 @@
 #include "my_class.h"
 #include <iostream>
 
-//This constructor is under comment because we do not need it for the purposes of the unit testing lesson.
-/*
-student::student()
-{
-   while(true)
-   {
-      std::cout << "What is student's number in class?" << '\n';
-      std::cin >> number;
-      if(!std::cin)
-      {
-         std::cerr << "Read invalid data for student's number in class!"<<std::endl;
-         std::cin.clear();
-         std::cin.ignore();
-      }
-      else
-      {
-         break;
-      }
-   }    
-   std::cin.ignore();
-   while(true)
-   {
-      std::cout << "What's the student's name?" << '\n';
-      getline(std::cin, name);
-      if(!std::cin || !isValidName(name))
-      {
-         std::cerr << "Read invalid data for the student's name!" << std::endl;
-         std::cin.clear();
-         std::cin.ignore();
-      }
-      else
-      {
-         break;
-      }
-   }
-   grades.reserve(MIN_GRADES);
-}
-*/
-
 student::student(const int num, const std::string& full_name)
 {
    number = num;
