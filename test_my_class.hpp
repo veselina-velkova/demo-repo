@@ -48,6 +48,7 @@ class TestClass
    void test_valid_getMinGrade();
    void test_invalid_getMinGrade();
 
+   void fill_with_random_grades(student& test_student);
    void test_getMaxGrade();
    void test_valid_getMaxGrade();
    void test_invalid_getMaxGrade();
