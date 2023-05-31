@@ -496,7 +496,7 @@ void TestClass :: test_invalid_setName()
    check_setName(invalid_new_name);
 }
 
-void TestClass :: check_setName (const std::string& new_name)
+void TestClass :: check_setName(const std::string& new_name)
 {
    name = " ";
    number = 0;
@@ -616,7 +616,9 @@ void TestClass :: test_getAverageGrade()
 
 void TestClass :: test_valid_getAverageGrade()
 {
-   std::vector <float> grades = {2, 2.5, 4.45, 6.00, 3.8, 5.6, 5.5, 7};
+   grades.clear();
+   grades = {2, 2.5, 4.45, 6.00, 3.8, 5.6, 5.5, 7};
+   std::random_shuffle(grades.begin(), grades.end());
    float avg_grade{};
    try
    {
@@ -627,11 +629,12 @@ void TestClass :: test_valid_getAverageGrade()
       std::cerr << e.what() << '\n';
    }
 
-   //UT: Check if getAverageGrade calculates correctly the average of all the grades of a student, when 
-   //they are present.
    name = TEST_CLASS_VALID_STRING;
    number = TEST_CLASS_POSITIVE_INT;
    student test_student(number, name);
+
+   //UT: Check if getAverageGrade calculates correctly the average of all the grades of a student, when 
+   //they are present.
    for(float grade : grades)
    {
       check_addNewGrade(test_student, grade);
@@ -676,9 +679,7 @@ void TestClass :: test_invalid_getAverageGrade()
    try
    {
       std::cout << "Trying to calculate the average for a student without any grades. " << '\n';
-      float test_avg_grade{};
-      test_avg_grade = test_student.getAverageGrade();
-      IS_TRUE (test_avg_grade == avg_grade);
+      IS_TRUE (test_student.getAverageGrade() == avg_grade);
 
    }
    catch(const std::logic_error& e)
@@ -708,6 +709,8 @@ void TestClass :: test_valid_getMaxGrade()
    student test_student(number, name);
 
    //UT: Testing if getMaxGrade works for student who has at least 1 grade.
+   //We will get random number of grades and random grades in the wanted scope.
+   grades.clear();
    int count = 1 + (rand() / (RAND_MAX / (MAX_GRADES - 1)));
    for(int i = test_student.getNumberGrades(); i < count; ++i)
    {
@@ -717,7 +720,8 @@ void TestClass :: test_valid_getMaxGrade()
    }
    try
    {
-      IS_TRUE(*(std::max_element(grades.begin(), grades.end())) == test_student.getMaxGrade());
+      std::cout << "Testing the correctness of the maximum grade when there is at least 1 grade. " <<'\n';
+      IS_TRUE(test_student.getMaxGrade() == *(std::max_element(grades.begin(), grades.end())));
    }
    catch(const std::logic_error& e)
    {
@@ -735,12 +739,128 @@ void TestClass :: test_invalid_getMaxGrade()
    grades.clear();
    try
    {
-      IS_TRUE(*(std::max_element(grades.begin(), grades.end())) == test_student.getMaxGrade());
+      std::cout << "Testing the correctness of the maximum element, when no grades are present. "<<'\n';
+      IS_TRUE(test_student.getMaxGrade() == *(std::max_element(grades.begin(), grades.end())));
    }
    catch(const std::logic_error& e)
    {
       std::cerr << e.what() << '\n';
    }
+}
+
+void TestClass :: test_getMinGrade()
+{
+   std::cout << '\n' << "Testing student::getMinGrade()" << '\n';
+   std::cout << "Testing GOOD weather scenario." << '\n';
+   std::cout << "START..." << '\n';
+   test_valid_getMinGrade();
+   std::cout << "END" << '\n';
+
+   std::cout << "Testing BAD weather scenario." << '\n';
+   std::cout << "START..." << '\n';
+   test_invalid_getMinGrade();
+   std::cout << "END" << '\n';
+}
+
+void TestClass :: test_valid_getMinGrade()
+{
+   name = TEST_CLASS_VALID_STRING;
+   number = TEST_CLASS_POSITIVE_INT;
+   student test_student(number, name);
+
+   //UT: Testing if getMinGrade works for student who has at least 1 grade.
+   //We will get random number of grades and random grades in the wanted scope.
+   int count = 1 + (rand() / (RAND_MAX / (MAX_GRADES - 1)));
+   for(int i = test_student.getNumberGrades(); i < count; ++i)
+   {
+      float new_grade = LOWEST_GRADE + (rand()/(RAND_MAX / (HIGHEST_GRADE - LOWEST_GRADE)));
+      check_addNewGrade(test_student, new_grade);
+      grades.push_back(new_grade);
+   }
+   try
+   {
+      std::cout << "Testing the correctness of the minimum grade when there is at least 1 grade. " <<'\n';
+      IS_TRUE(test_student.getMinGrade() == *(std::min_element(grades.begin(), grades.end())));
+   }
+   catch(const std::logic_error& e)
+   {
+      std::cerr << e.what() << '\n';
+   }
+}
+
+void TestClass :: test_invalid_getMinGrade()
+{
+   name = TEST_CLASS_VALID_STRING;
+   number = TEST_CLASS_POSITIVE_INT;
+   student test_student(number, name);
+
+   //UT: Testing if getMinGrade works for student who has no grades.
+   grades.clear();
+   try
+   {
+      std::cout << "Testing the correctness of the minimum element, when no grades are present. "<<'\n';
+      IS_TRUE(test_student.getMinGrade() == *(std::min_element(grades.begin(), grades.end())));
+   }
+   catch(const std::logic_error& e)
+   {
+      std::cerr << e.what() << '\n';
+   }
+}
+
+void TestClass :: test_getGrades()
+{
+   std::cout << '\n' << "Testing student::getGrades()" << '\n';
+   std::cout << "Testing GOOD weather scenario." << '\n';
+   std::cout << "START..." << '\n';
+   test_valid_getGrades();
+   std::cout << "END" << '\n';
+
+   std::cout << "Testing BAD weather scenario." << '\n';
+   std::cout << "START..." << '\n';
+   test_invalid_getGrades();
+   std::cout << "END" << '\n';
+}
+
+void TestClass :: test_valid_getGrades()
+{
+   name = TEST_CLASS_VALID_STRING;
+   number = TEST_CLASS_POSITIVE_INT;
+   student test_student(number, name);
+
+   //UT: We will check if the vector grades of the student class keeps the right grades in the right order.
+   int count = 1 + (rand() / (RAND_MAX / (MAX_GRADES - 1)));
+   grades.clear();
+   for(int i = test_student.getNumberGrades(); i < count; ++i)
+   {
+      float new_grade = LOWEST_GRADE + (rand()/(RAND_MAX / (HIGHEST_GRADE - LOWEST_GRADE)));
+      check_addNewGrade(test_student, new_grade);
+      grades.push_back(new_grade);
+   }
+   check_are_recieved_grades_the_same(test_student, grades);
+}
+
+void TestClass :: test_invalid_getGrades()
+{
+   name = TEST_CLASS_VALID_STRING;
+   number =TEST_CLASS_POSITIVE_INT;
+   student test_student(number, name);
+
+   //UT: Check when no grades are received.
+   grades.clear();
+   check_are_recieved_grades_the_same(test_student, grades);
+}
+
+void TestClass :: check_are_recieved_grades_the_same(student& test_student, std::vector<float>& temp_grades)
+{
+   std::cout << "Testing if the student has the same amount of grades as we keep in the vector. " << '\n';
+   IS_TRUE(temp_grades.size() == test_student.getNumberGrades());
+   std::cout << "Comparing each grade..."<<'\n';
+   for(int i = 0; i < temp_grades.size(); ++i)
+      {
+         float student_grade = test_student.getGrades()[i];
+         std::cout << "Comparing: " << temp_grades[i] << " and " << student_grade << " ." << '\n'; 
+         IS_TRUE(temp_grades[i] == student_grade);
+      }
 }
 
 int main()
@@ -753,6 +873,8 @@ int main()
    myTest.test_addNewGrade();
    myTest.test_getAverageGrade();
    myTest.test_getMaxGrade();
-   
+   myTest.test_getMinGrade();
+   myTest.test_getGrades();
+
    return 0;
 }
