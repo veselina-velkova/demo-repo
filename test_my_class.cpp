@@ -704,6 +704,7 @@ void TestClass :: test_getMaxGrade()
 
 void TestClass :: fill_with_random_grades(student& test_student)
 {
+   grades.clear();
    int count = 1 + (rand() / (RAND_MAX / (MAX_GRADES - 1)));
    for(int i = test_student.getNumberGrades(); i < count; ++i)
    {
@@ -721,7 +722,6 @@ void TestClass :: test_valid_getMaxGrade()
 
    //UT: Testing if getMaxGrade works for student who has at least 1 grade.
    //We will get random number of grades and random grades in the wanted scope.
-   grades.clear();
    fill_with_random_grades(test_student);
    try
    {
@@ -775,7 +775,6 @@ void TestClass :: test_valid_getMinGrade()
 
    //UT: Testing if getMinGrade works for student who has at least 1 grade.
    //We will get random number of grades and random grades in the wanted scope.
-   grades.clear();
    fill_with_random_grades(test_student);
    try
    {
@@ -828,7 +827,6 @@ void TestClass :: test_valid_getGrades()
    student test_student(number, name);
 
    //UT: We will check if the vector grades of the student class keeps the right grades in the right order.
-   grades.clear();
    fill_with_random_grades(test_student);
    check_are_received_grades_the_same(test_student, grades);
 }
