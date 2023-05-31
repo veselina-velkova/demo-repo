@@ -55,5 +55,5 @@ class TestClass
    void test_getGrades();
    void test_valid_getGrades();
    void test_invalid_getGrades();
-   void check_are_recieved_grades_the_same(student& test_student, std::vector<float>& temp_grades);
+   void check_are_received_grades_the_same(student& test_student, std::vector<float>& temp_grades);
 };

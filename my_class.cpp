@@ -63,7 +63,7 @@ bool student::isValidName(const std::string& new_name)
 {
    for(char ch : new_name)
    {
-      if(ch != ' ' && ch != '-' && !isalpha(ch))
+      if((ch != ' ') && (ch != '-') && !isalpha(ch))
       {
          return false;
       }

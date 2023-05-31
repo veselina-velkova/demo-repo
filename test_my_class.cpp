@@ -836,7 +836,7 @@ void TestClass :: test_valid_getGrades()
       check_addNewGrade(test_student, new_grade);
       grades.push_back(new_grade);
    }
-   check_are_recieved_grades_the_same(test_student, grades);
+   check_are_received_grades_the_same(test_student, grades);
 }
 
 void TestClass :: test_invalid_getGrades()
@@ -847,18 +847,19 @@ void TestClass :: test_invalid_getGrades()
 
    //UT: Check when no grades are received.
    grades.clear();
-   check_are_recieved_grades_the_same(test_student, grades);
+   check_are_received_grades_the_same(test_student, grades);
 }
 
-void TestClass :: check_are_recieved_grades_the_same(student& test_student, std::vector<float>& temp_grades)
+void TestClass :: check_are_received_grades_the_same(student& test_student, std::vector<float>& temp_grades)
 {
    std::cout << "Testing if the student has the same amount of grades as we keep in the vector. " << '\n';
    IS_TRUE(temp_grades.size() == test_student.getNumberGrades());
-   std::cout << "Comparing each grade..."<<'\n';
+   std::cout << "Comparing each grade..." << '\n';
    for(int i = 0; i < temp_grades.size(); ++i)
       {
+         //getGrades is printing the student's grades.
          float student_grade = test_student.getGrades()[i];
-         std::cout << "Comparing: " << temp_grades[i] << " and " << student_grade << " ." << '\n'; 
+         std::cout << "Comparing: " << temp_grades[i] << " and " << student_grade << "." << '\n'; 
          IS_TRUE(temp_grades[i] == student_grade);
       }
 }
