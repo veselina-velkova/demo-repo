@@ -1,3 +1,14 @@
+/**
+ * @file most_frequent_numbers.cpp
+ * @author Veselina Velkova (veselina.velkova@strypes.eu)
+ * @brief 
+ * @version 0.1
+ * @date 2023-06-02
+ * 
+ * @copyright Copyright (c) 2023
+ * 
+ ****************************************************/
+
 #include<vector>
 #include<array>
 #include<algorithm>
@@ -28,7 +39,7 @@ std::vector<int> mostFrequent (const std::vector<int>& nums)
     }
 
     //We find how many times the most frequent is found.
-    int* mostFreq = std::max_element(digits.begin(), digits.end());
+    int* mostFreq = (std::max_element(digits.begin(), digits.end()));
 
     //And we find the elements which are found this amount of times.
     //Using this array digits we guarantee that in max the elements will be sorted in ascending order.
