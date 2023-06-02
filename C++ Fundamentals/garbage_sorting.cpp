@@ -1,3 +1,14 @@
+/**
+ * @file garbage_sorting.cpp
+ * @author Veselina Velkova (veselina.velkova@strypes.eu)
+ * @brief 
+ * @version 0.1
+ * @date 2023-06-02
+ * 
+ * @copyright Copyright (c) 2023
+ * 
+ ****************************************************/
+
 /*
 *We are going to use string for the types of garbage and for the position in the collection.
 *We are going to use list, because we can easily push back or push front.
