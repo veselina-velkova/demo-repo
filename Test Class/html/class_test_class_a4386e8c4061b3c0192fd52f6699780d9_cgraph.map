@@ -1,0 +1,8 @@
+<map id="TestClass::check_addNewGrade" name="TestClass::check_addNewGrade">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,216,57"/>
+<area shape="rect" id="Node000002" href="$classstudent.html#ae4a42aae88371da3d7a2a045546c55f5" title=" " alt="" coords="264,5,417,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="216,30,248,26,249,31,216,35"/>
+<area shape="rect" id="Node000003" href="$classstudent.html#aeb0bd465659ab78523d480c3dbdb91c4" title=" " alt="" coords="465,31,642,57"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="216,41,450,41,450,47,216,47"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="417,25,450,29,450,34,417,30"/>
+</map>

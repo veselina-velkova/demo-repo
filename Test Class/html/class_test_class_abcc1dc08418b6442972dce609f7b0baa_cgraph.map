@@ -1,0 +1,7 @@
+<map id="TestClass::test_invalid_getMinGrade" name="TestClass::test_invalid_getMinGrade">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,157,48"/>
+<area shape="rect" id="Node000002" href="$classstudent.html#a8c23a42b02e472eab631d8a1485fc7b1" title=" " alt="" coords="205,13,351,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="157,24,190,24,190,29,157,29"/>
+<area shape="rect" id="Node000003" href="$classstudent.html#a32cc913fd923914f73543d52937e8db5" title=" " alt="" coords="399,13,583,40"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="352,24,384,24,384,29,352,29"/>
+</map>

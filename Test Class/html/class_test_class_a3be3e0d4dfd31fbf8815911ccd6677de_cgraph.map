@@ -1,0 +1,7 @@
+<map id="TestClass::test_invalid_getMaxGrade" name="TestClass::test_invalid_getMaxGrade">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,157,48"/>
+<area shape="rect" id="Node000002" href="$classstudent.html#a5b8d5fb4e7808bf944784fee64163017" title=" " alt="" coords="205,13,355,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="157,24,190,24,190,29,157,29"/>
+<area shape="rect" id="Node000003" href="$classstudent.html#a32cc913fd923914f73543d52937e8db5" title=" " alt="" coords="403,13,587,40"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="356,24,388,24,388,29,356,29"/>
+</map>

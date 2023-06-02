@@ -1,0 +1,9 @@
+<map id="TestClass::test_valid_getAverageGrade" name="TestClass::test_valid_getAverageGrade">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,23,147,65"/>
+<area shape="rect" id="Node000002" href="$classstudent.html#a50faf390a6cdd2620af4548d48325116" title=" " alt="" coords="195,31,366,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="147,41,180,41,180,47,147,47"/>
+<area shape="rect" id="Node000003" href="$classstudent.html#a32cc913fd923914f73543d52937e8db5" title=" " alt="" coords="414,5,598,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="366,32,399,28,399,33,366,37"/>
+<area shape="rect" id="Node000004" href="$classstudent.html#aeb0bd465659ab78523d480c3dbdb91c4" title=" " alt="" coords="418,56,595,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="366,51,403,55,402,60,366,56"/>
+</map>
