@@ -1,3 +1,14 @@
+/**
+ * @file my_class.h
+ * @author Veselina Velkova (veselina.velkova@strypes.eu)
+ * @brief 
+ * @version 0.1
+ * @date 2023-06-02
+ * 
+ * @copyright Copyright (c) 2023
+ * 
+ ****************************************************/
+
 #pragma once
 #include<string>
 #include<vector>

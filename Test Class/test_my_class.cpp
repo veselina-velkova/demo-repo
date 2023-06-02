@@ -1,3 +1,14 @@
+/**
+ * @file test_my_class.cpp
+ * @author Veselina Velkova (veselina.velkova@strypes.eu)
+ * @brief 
+ * @version 0.1
+ * @date 2023-06-02
+ * 
+ * @copyright Copyright (c) 2023
+ * 
+ ****************************************************/
+
 #include<limits>
 #include<cmath>
 #include<cstdlib>
