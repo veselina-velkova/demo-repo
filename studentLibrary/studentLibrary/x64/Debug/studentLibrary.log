@@ -1,0 +1,41 @@
+﻿  pch.cpp
+  dllmain.cpp
+  my_class.cpp
+C:\Users\Veselina Velkova\source\repos\studentLibrary\studentLibrary\my_class.hpp(31,14): warning C4251: 'Student::name': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'Student'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\include\xstring(5155,29): message : see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+C:\Users\Veselina Velkova\source\repos\studentLibrary\studentLibrary\my_class.hpp(34,21): warning C4251: 'Student::grades': class 'std::vector<float,std::allocator<float>>' needs to have dll-interface to be used by clients of class 'Student'
+C:\Users\Veselina Velkova\source\repos\studentLibrary\studentLibrary\my_class.hpp(34,7): message : see declaration of 'std::vector<float,std::allocator<float>>'
+C:\Users\Veselina Velkova\source\repos\studentLibrary\studentLibrary\my_class.cpp(16,10): warning C4273: 'Student::Student': inconsistent dll linkage
+C:\Users\Veselina Velkova\source\repos\studentLibrary\studentLibrary\my_class.hpp(39,2): message : see previous definition of '{ctor}'
+C:\Users\Veselina Velkova\source\repos\studentLibrary\studentLibrary\my_class.cpp(30,11): warning C4273: 'Student::~Student': inconsistent dll linkage
+C:\Users\Veselina Velkova\source\repos\studentLibrary\studentLibrary\my_class.hpp(40,3): message : see previous definition of '{dtor}'
+C:\Users\Veselina Velkova\source\repos\studentLibrary\studentLibrary\my_class.cpp(35,15): warning C4273: 'Student::isValidGrade': inconsistent dll linkage
+C:\Users\Veselina Velkova\source\repos\studentLibrary\studentLibrary\my_class.hpp(36,7): message : see previous definition of 'isValidGrade'
+C:\Users\Veselina Velkova\source\repos\studentLibrary\studentLibrary\my_class.cpp(40,15): warning C4273: 'Student::isValidName': inconsistent dll linkage
+C:\Users\Veselina Velkova\source\repos\studentLibrary\studentLibrary\my_class.hpp(35,7): message : see previous definition of 'isValidName'
+C:\Users\Veselina Velkova\source\repos\studentLibrary\studentLibrary\my_class.cpp(52,14): warning C4273: 'Student::getNumber': inconsistent dll linkage
+C:\Users\Veselina Velkova\source\repos\studentLibrary\studentLibrary\my_class.hpp(42,6): message : see previous definition of 'getNumber'
+C:\Users\Veselina Velkova\source\repos\studentLibrary\studentLibrary\my_class.cpp(57,22): warning C4273: 'Student::getName': inconsistent dll linkage
+C:\Users\Veselina Velkova\source\repos\studentLibrary\studentLibrary\my_class.hpp(43,14): message : see previous definition of 'getName'
+C:\Users\Veselina Velkova\source\repos\studentLibrary\studentLibrary\my_class.cpp(62,15): warning C4273: 'Student::setNumber': inconsistent dll linkage
+C:\Users\Veselina Velkova\source\repos\studentLibrary\studentLibrary\my_class.hpp(47,7): message : see previous definition of 'setNumber'
+C:\Users\Veselina Velkova\source\repos\studentLibrary\studentLibrary\my_class.cpp(67,15): warning C4273: 'Student::setName': inconsistent dll linkage
+C:\Users\Veselina Velkova\source\repos\studentLibrary\studentLibrary\my_class.hpp(48,7): message : see previous definition of 'setName'
+C:\Users\Veselina Velkova\source\repos\studentLibrary\studentLibrary\my_class.cpp(77,14): warning C4273: 'Student::getNumberGrades': inconsistent dll linkage
+C:\Users\Veselina Velkova\source\repos\studentLibrary\studentLibrary\my_class.hpp(44,6): message : see previous definition of 'getNumberGrades'
+C:\Users\Veselina Velkova\source\repos\studentLibrary\studentLibrary\my_class.cpp(79,23): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Veselina Velkova\source\repos\studentLibrary\studentLibrary\my_class.cpp(82,15): warning C4273: 'Student::addNewGrade': inconsistent dll linkage
+C:\Users\Veselina Velkova\source\repos\studentLibrary\studentLibrary\my_class.hpp(51,7): message : see previous definition of 'addNewGrade'
+C:\Users\Veselina Velkova\source\repos\studentLibrary\studentLibrary\my_class.cpp(97,15): warning C4273: 'Student::areGradesRecieved': inconsistent dll linkage
+C:\Users\Veselina Velkova\source\repos\studentLibrary\studentLibrary\my_class.hpp(52,7): message : see previous definition of 'areGradesRecieved'
+C:\Users\Veselina Velkova\source\repos\studentLibrary\studentLibrary\my_class.cpp(102,16): warning C4273: 'Student::getAverageGrade': inconsistent dll linkage
+C:\Users\Veselina Velkova\source\repos\studentLibrary\studentLibrary\my_class.hpp(53,8): message : see previous definition of 'getAverageGrade'
+C:\Users\Veselina Velkova\source\repos\studentLibrary\studentLibrary\my_class.cpp(111,16): warning C4273: 'Student::getMaxGrade': inconsistent dll linkage
+C:\Users\Veselina Velkova\source\repos\studentLibrary\studentLibrary\my_class.hpp(54,8): message : see previous definition of 'getMaxGrade'
+C:\Users\Veselina Velkova\source\repos\studentLibrary\studentLibrary\my_class.cpp(128,16): warning C4273: 'Student::getMinGrade': inconsistent dll linkage
+C:\Users\Veselina Velkova\source\repos\studentLibrary\studentLibrary\my_class.hpp(55,8): message : see previous definition of 'getMinGrade'
+C:\Users\Veselina Velkova\source\repos\studentLibrary\studentLibrary\my_class.cpp(145,29): warning C4273: 'Student::getGrades': inconsistent dll linkage
+C:\Users\Veselina Velkova\source\repos\studentLibrary\studentLibrary\my_class.hpp(45,21): message : see previous definition of 'getGrades'
+  Generating Code...
+     Creating library C:\Users\Veselina Velkova\source\repos\studentLibrary\x64\Debug\studentLibrary.lib and object C:\Users\Veselina Velkova\source\repos\studentLibrary\x64\Debug\studentLibrary.exp
+  studentLibrary.vcxproj -> C:\Users\Veselina Velkova\source\repos\studentLibrary\x64\Debug\studentLibrary.dll

@@ -1,0 +1,7 @@
+﻿  studentClient.cpp
+C:\Users\Veselina Velkova\source\repos\studentLibrary\studentLibrary\my_class.hpp(31,14): warning C4251: 'Student::name': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'Student'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\include\xstring(5155,29): message : see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+C:\Users\Veselina Velkova\source\repos\studentLibrary\studentLibrary\my_class.hpp(34,21): warning C4251: 'Student::grades': class 'std::vector<float,std::allocator<float>>' needs to have dll-interface to be used by clients of class 'Student'
+C:\Users\Veselina Velkova\source\repos\studentLibrary\studentLibrary\my_class.hpp(34,7): message : see declaration of 'std::vector<float,std::allocator<float>>'
+  studentClient.vcxproj -> C:\Users\Veselina Velkova\source\repos\studentClient\x64\Debug\studentClient.exe
+  0 File(s) copied
