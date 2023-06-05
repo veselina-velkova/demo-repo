@@ -1,0 +1,161 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="my__class_8h" kind="file" language="C++">
+    <compoundname>my_class.h</compoundname>
+    <includes local="no">string</includes>
+    <includes local="no">vector</includes>
+    <includedby refid="my__class_8cpp" local="yes">my_class.cpp</includedby>
+    <includedby refid="test__my__class_8cpp" local="yes">test_my_class.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>my_class.h</label>
+        <link refid="my__class_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>string</label>
+      </node>
+      <node id="3">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>my_class.cpp</label>
+        <link refid="my__class_8cpp"/>
+      </node>
+      <node id="1">
+        <label>my_class.h</label>
+        <link refid="my__class_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>test_my_class.cpp</label>
+        <link refid="test__my__class_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classstudent" prot="public">student</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="my__class_8h_1acfe807b192670afc370c3385f235d02e" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int MIN_GRADES</definition>
+        <argsstring></argsstring>
+        <name>MIN_GRADES</name>
+        <initializer>= 5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="my_class.h" line="7" column="11" bodyfile="my_class.h" bodystart="7" bodyend="-1"/>
+        <referencedby refid="classstudent_1af407df3500e1a5e61cb66ecff1c95726" compoundref="my__class_8cpp" startline="4" endline="16">student::student</referencedby>
+        <referencedby refid="class_test_class_1a09903432ed60c7c38f1beccc4cf18987" compoundref="test__my__class_8cpp" startline="40" endline="46">TestClass::TestClass</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="my__class_8h_1a6a68cbead10ddb7453cd17e368acc55e" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int MAX_GRADES</definition>
+        <argsstring></argsstring>
+        <name>MAX_GRADES</name>
+        <initializer>= 20</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="my_class.h" line="8" column="11" bodyfile="my_class.h" bodystart="8" bodyend="-1"/>
+        <referencedby refid="classstudent_1ae4a42aae88371da3d7a2a045546c55f5" compoundref="my__class_8cpp" startline="65" endline="78">student::addNewGrade</referencedby>
+        <referencedby refid="class_test_class_1ad1018f29c78f7ec47a8c923b848a1495" compoundref="test__my__class_8cpp" startline="705" endline="715">TestClass::fill_with_random_grades</referencedby>
+        <referencedby refid="class_test_class_1a51a2c92494f26f7c449ca55c0a33ac4e" compoundref="test__my__class_8cpp" startline="545" endline="582">TestClass::test_invalid_addNewGrade</referencedby>
+        <referencedby refid="class_test_class_1a1be405fb18449c3872587853f9a52e57" compoundref="test__my__class_8cpp" startline="531" endline="543">TestClass::test_valid_addNewGrade</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="my__class_8h_1a9266bbaee8536bb3af5cd9557ba27871" prot="public" static="no" mutable="no">
+        <type>const float</type>
+        <definition>const float LOWEST_GRADE</definition>
+        <argsstring></argsstring>
+        <name>LOWEST_GRADE</name>
+        <initializer>= 2.f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="my_class.h" line="9" column="13" bodyfile="my_class.h" bodystart="9" bodyend="-1"/>
+        <referencedby refid="class_test_class_1a0006f0a28764ef0cde04ca173650cc77" compoundref="test__my__class_8cpp" startline="652" endline="669">TestClass::calculate_average</referencedby>
+        <referencedby refid="class_test_class_1ad1018f29c78f7ec47a8c923b848a1495" compoundref="test__my__class_8cpp" startline="705" endline="715">TestClass::fill_with_random_grades</referencedby>
+        <referencedby refid="class_test_class_1a51a2c92494f26f7c449ca55c0a33ac4e" compoundref="test__my__class_8cpp" startline="545" endline="582">TestClass::test_invalid_addNewGrade</referencedby>
+        <referencedby refid="class_test_class_1a1be405fb18449c3872587853f9a52e57" compoundref="test__my__class_8cpp" startline="531" endline="543">TestClass::test_valid_addNewGrade</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="my__class_8h_1a888557700c666956fe79990e5d81b6f5" prot="public" static="no" mutable="no">
+        <type>const float</type>
+        <definition>const float HIGHEST_GRADE</definition>
+        <argsstring></argsstring>
+        <name>HIGHEST_GRADE</name>
+        <initializer>= 6.f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="my_class.h" line="10" column="13" bodyfile="my_class.h" bodystart="10" bodyend="-1"/>
+        <referencedby refid="class_test_class_1a0006f0a28764ef0cde04ca173650cc77" compoundref="test__my__class_8cpp" startline="652" endline="669">TestClass::calculate_average</referencedby>
+        <referencedby refid="class_test_class_1ad1018f29c78f7ec47a8c923b848a1495" compoundref="test__my__class_8cpp" startline="705" endline="715">TestClass::fill_with_random_grades</referencedby>
+        <referencedby refid="class_test_class_1a51a2c92494f26f7c449ca55c0a33ac4e" compoundref="test__my__class_8cpp" startline="545" endline="582">TestClass::test_invalid_addNewGrade</referencedby>
+        <referencedby refid="class_test_class_1a1be405fb18449c3872587853f9a52e57" compoundref="test__my__class_8cpp" startline="531" endline="543">TestClass::test_valid_addNewGrade</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//These<sp/>constants<sp/>are<sp/>useful<sp/>because<sp/>in<sp/>real<sp/>life<sp/>students<sp/>can<sp/>not<sp/>have<sp/>infinite<sp/>number<sp/>of<sp/>grades.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//Usually,<sp/>for<sp/>each<sp/>subject<sp/>there<sp/>is<sp/>minimum<sp/>and<sp/>maximum<sp/>number<sp/>of<sp/>grades<sp/>that<sp/>each<sp/>student<sp/>should<sp/>have.<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="my__class_8h_1acfe807b192670afc370c3385f235d02e" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="my__class_8h_1acfe807b192670afc370c3385f235d02e" kindref="member">MIN_GRADES</ref><sp/>=<sp/>5;</highlight></codeline>
+<codeline lineno="8" refid="my__class_8h_1a6a68cbead10ddb7453cd17e368acc55e" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="my__class_8h_1a6a68cbead10ddb7453cd17e368acc55e" kindref="member">MAX_GRADES</ref><sp/>=<sp/>20;</highlight></codeline>
+<codeline lineno="9" refid="my__class_8h_1a9266bbaee8536bb3af5cd9557ba27871" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="my__class_8h_1a9266bbaee8536bb3af5cd9557ba27871" kindref="member">LOWEST_GRADE</ref><sp/>=<sp/>2.f;</highlight></codeline>
+<codeline lineno="10" refid="my__class_8h_1a888557700c666956fe79990e5d81b6f5" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="my__class_8h_1a888557700c666956fe79990e5d81b6f5" kindref="member">HIGHEST_GRADE</ref><sp/>=<sp/>6.f;</highlight></codeline>
+<codeline lineno="11" refid="classstudent" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classstudent" kindref="compound">student</ref></highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/>std::string<sp/>name{};</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>number{};</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>sum{};</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/>std::vector&lt;float&gt;<sp/>grades{};</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isValidName(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>new_name);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isValidGrade(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>grade);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><ref refid="classstudent" kindref="compound">student</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>num,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>full_name);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classstudent_1ae378080083989197920381b03fd91dbd" kindref="member">getNumber</ref>();</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/>std::string<sp/><ref refid="classstudent_1ac60ff0fd8505a01c7a929abe49e91334" kindref="member">getName</ref>();</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classstudent_1aeb0bd465659ab78523d480c3dbdb91c4" kindref="member">getNumberGrades</ref>();</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/>std::vector&lt;float&gt;<sp/><ref refid="classstudent_1afb9505bad4424cd24c1c9c6ed9a8ae6b" kindref="member">getGrades</ref>();</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classstudent_1aa5656a3bae199b4707ca72d22c9f3298" kindref="member">setNumber</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>num);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classstudent_1a64d0ed3d4c97f02d2915e181eab4d85f" kindref="member">setName</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>newName);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Class<sp/>Methods<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classstudent_1ae4a42aae88371da3d7a2a045546c55f5" kindref="member">addNewGrade</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>grade);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classstudent_1a32cc913fd923914f73543d52937e8db5" kindref="member">areGradesRecieved</ref>();</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classstudent_1a50faf390a6cdd2620af4548d48325116" kindref="member">getAverageGrade</ref>();</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classstudent_1a5b8d5fb4e7808bf944784fee64163017" kindref="member">getMaxGrade</ref>();</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classstudent_1a8c23a42b02e472eab631d8a1485fc7b1" kindref="member">getMinGrade</ref>();</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="my_class.h"/>
+  </compounddef>
+</doxygen>

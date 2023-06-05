@@ -1,0 +1,354 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classstudent" kind="class" language="C++" prot="public">
+    <compoundname>student</compoundname>
+    <includes refid="my__class_8h" local="no">my_class.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classstudent_1a8bba46a454eaecf8619a68c4c38c7b8d" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string student::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <qualifiedname>student::name</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="my_class.h" line="13" column="16" bodyfile="my_class.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classstudent_1ab3bb5637a4a41bebea9ec0a152f979b0" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int student::number</definition>
+        <argsstring></argsstring>
+        <name>number</name>
+        <qualifiedname>student::number</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="my_class.h" line="14" column="8" bodyfile="my_class.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classstudent_1a75949576fea36961a3ccbc1588679d81" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float student::sum</definition>
+        <argsstring></argsstring>
+        <name>sum</name>
+        <qualifiedname>student::sum</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="my_class.h" line="15" column="10" bodyfile="my_class.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classstudent_1aa8690e8ffa901b35cdaaa4fa095ef245" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; float &gt;</type>
+        <definition>std::vector&lt;float&gt; student::grades</definition>
+        <argsstring></argsstring>
+        <name>grades</name>
+        <qualifiedname>student::grades</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="my_class.h" line="16" column="16" bodyfile="my_class.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classstudent_1a0f7aaac883ee3d37b6ff77a2bf5f8b2f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool student::isValidName</definition>
+        <argsstring>(const std::string &amp;new_name)</argsstring>
+        <name>isValidName</name>
+        <qualifiedname>student::isValidName</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>new_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="my_class.h" line="17" column="9" bodyfile="my_class.cpp" bodystart="23" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classstudent_1a45bb4aae27631819a5b0d1b2ab8a6f32" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool student::isValidGrade</definition>
+        <argsstring>(const float grade)</argsstring>
+        <name>isValidGrade</name>
+        <qualifiedname>student::isValidGrade</qualifiedname>
+        <param>
+          <type>const float</type>
+          <declname>grade</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="my_class.h" line="18" column="9" bodyfile="my_class.cpp" bodystart="18" bodyend="21"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classstudent_1af407df3500e1a5e61cb66ecff1c95726" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>student::student</definition>
+        <argsstring>(const int num, const std::string &amp;full_name)</argsstring>
+        <name>student</name>
+        <qualifiedname>student::student</qualifiedname>
+        <param>
+          <type>const int</type>
+          <declname>num</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>full_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="my_class.h" line="21" column="4" bodyfile="my_class.cpp" bodystart="4" bodyend="16"/>
+        <references refid="my__class_8h_1acfe807b192670afc370c3385f235d02e" compoundref="my__class_8h" startline="7">MIN_GRADES</references>
+      </memberdef>
+      <memberdef kind="function" id="classstudent_1ae378080083989197920381b03fd91dbd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int student::getNumber</definition>
+        <argsstring>()</argsstring>
+        <name>getNumber</name>
+        <qualifiedname>student::getNumber</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="my_class.h" line="23" column="8" bodyfile="my_class.cpp" bodystart="35" bodyend="38"/>
+        <referencedby refid="class_test_class_1abc94be115d46abbe7582b233a294bfce" compoundref="test__my__class_8cpp" startline="361" endline="378">TestClass::check_setNumber</referencedby>
+        <referencedby refid="class_test_class_1aa8eb54e569c7b82eddb4faa1c84b5434" compoundref="test__my__class_8cpp" startline="118" endline="130">TestClass::check_try_catch_getNumber</referencedby>
+        <referencedby refid="class_test_class_1aa030f38a05c8b80ee00ee0867b5f0177" compoundref="test__my__class_8cpp" startline="132" endline="276">TestClass::test_invalid_getNumber</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classstudent_1ac60ff0fd8505a01c7a929abe49e91334" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string student::getName</definition>
+        <argsstring>()</argsstring>
+        <name>getName</name>
+        <qualifiedname>student::getName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="my_class.h" line="24" column="16" bodyfile="my_class.cpp" bodystart="40" bodyend="43"/>
+        <referencedby refid="class_test_class_1a5220911e29eaf6083958229f540e095b" compoundref="test__my__class_8cpp" startline="292" endline="304">TestClass::check_getName</referencedby>
+        <referencedby refid="class_test_class_1a8849cbe2d80fc994d137a25b7689ea78" compoundref="test__my__class_8cpp" startline="499" endline="515">TestClass::check_setName</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classstudent_1aeb0bd465659ab78523d480c3dbdb91c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int student::getNumberGrades</definition>
+        <argsstring>()</argsstring>
+        <name>getNumberGrades</name>
+        <qualifiedname>student::getNumberGrades</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="my_class.h" line="25" column="8" bodyfile="my_class.cpp" bodystart="60" bodyend="63"/>
+        <referencedby refid="classstudent_1ae4a42aae88371da3d7a2a045546c55f5" compoundref="my__class_8cpp" startline="65" endline="78">addNewGrade</referencedby>
+        <referencedby refid="class_test_class_1a4386e8c4061b3c0192fd52f6699780d9" compoundref="test__my__class_8cpp" startline="584" endline="601">TestClass::check_addNewGrade</referencedby>
+        <referencedby refid="class_test_class_1a06cdd6c8f5e4b7622d235597ed0997bc" compoundref="test__my__class_8cpp" startline="845" endline="857">TestClass::check_are_received_grades_the_same</referencedby>
+        <referencedby refid="class_test_class_1ad1018f29c78f7ec47a8c923b848a1495" compoundref="test__my__class_8cpp" startline="705" endline="715">TestClass::fill_with_random_grades</referencedby>
+        <referencedby refid="classstudent_1a50faf390a6cdd2620af4548d48325116" compoundref="my__class_8cpp" startline="85" endline="92">getAverageGrade</referencedby>
+        <referencedby refid="class_test_class_1a51a2c92494f26f7c449ca55c0a33ac4e" compoundref="test__my__class_8cpp" startline="545" endline="582">TestClass::test_invalid_addNewGrade</referencedby>
+        <referencedby refid="class_test_class_1a1be405fb18449c3872587853f9a52e57" compoundref="test__my__class_8cpp" startline="531" endline="543">TestClass::test_valid_addNewGrade</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classstudent_1afb9505bad4424cd24c1c9c6ed9a8ae6b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; float &gt;</type>
+        <definition>std::vector&lt; float &gt; student::getGrades</definition>
+        <argsstring>()</argsstring>
+        <name>getGrades</name>
+        <qualifiedname>student::getGrades</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="my_class.h" line="26" column="16" bodyfile="my_class.cpp" bodystart="128" bodyend="136"/>
+        <referencedby refid="class_test_class_1a06cdd6c8f5e4b7622d235597ed0997bc" compoundref="test__my__class_8cpp" startline="845" endline="857">TestClass::check_are_received_grades_the_same</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classstudent_1aa5656a3bae199b4707ca72d22c9f3298" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void student::setNumber</definition>
+        <argsstring>(int num)</argsstring>
+        <name>setNumber</name>
+        <qualifiedname>student::setNumber</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="my_class.h" line="28" column="9" bodyfile="my_class.cpp" bodystart="45" bodyend="48"/>
+        <referencedby refid="class_test_class_1abc94be115d46abbe7582b233a294bfce" compoundref="test__my__class_8cpp" startline="361" endline="378">TestClass::check_setNumber</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classstudent_1a64d0ed3d4c97f02d2915e181eab4d85f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void student::setName</definition>
+        <argsstring>(const std::string &amp;newName)</argsstring>
+        <name>setName</name>
+        <qualifiedname>student::setName</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>newName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="my_class.h" line="29" column="9" bodyfile="my_class.cpp" bodystart="50" bodyend="58"/>
+        <referencedby refid="class_test_class_1a8849cbe2d80fc994d137a25b7689ea78" compoundref="test__my__class_8cpp" startline="499" endline="515">TestClass::check_setName</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classstudent_1ae4a42aae88371da3d7a2a045546c55f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void student::addNewGrade</definition>
+        <argsstring>(float grade)</argsstring>
+        <name>addNewGrade</name>
+        <qualifiedname>student::addNewGrade</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>grade</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="my_class.h" line="32" column="9" bodyfile="my_class.cpp" bodystart="65" bodyend="78"/>
+        <references refid="classstudent_1aeb0bd465659ab78523d480c3dbdb91c4" compoundref="my__class_8cpp" startline="60" endline="63">getNumberGrades</references>
+        <references refid="my__class_8h_1a6a68cbead10ddb7453cd17e368acc55e" compoundref="my__class_8h" startline="8">MAX_GRADES</references>
+        <referencedby refid="class_test_class_1a4386e8c4061b3c0192fd52f6699780d9" compoundref="test__my__class_8cpp" startline="584" endline="601">TestClass::check_addNewGrade</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classstudent_1a32cc913fd923914f73543d52937e8db5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool student::areGradesRecieved</definition>
+        <argsstring>()</argsstring>
+        <name>areGradesRecieved</name>
+        <qualifiedname>student::areGradesRecieved</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="my_class.h" line="33" column="9" bodyfile="my_class.cpp" bodystart="80" bodyend="83"/>
+        <referencedby refid="classstudent_1a50faf390a6cdd2620af4548d48325116" compoundref="my__class_8cpp" startline="85" endline="92">getAverageGrade</referencedby>
+        <referencedby refid="classstudent_1a5b8d5fb4e7808bf944784fee64163017" compoundref="my__class_8cpp" startline="94" endline="109">getMaxGrade</referencedby>
+        <referencedby refid="classstudent_1a8c23a42b02e472eab631d8a1485fc7b1" compoundref="my__class_8cpp" startline="111" endline="126">getMinGrade</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classstudent_1a50faf390a6cdd2620af4548d48325116" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float student::getAverageGrade</definition>
+        <argsstring>()</argsstring>
+        <name>getAverageGrade</name>
+        <qualifiedname>student::getAverageGrade</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="my_class.h" line="34" column="10" bodyfile="my_class.cpp" bodystart="85" bodyend="92"/>
+        <references refid="classstudent_1a32cc913fd923914f73543d52937e8db5" compoundref="my__class_8cpp" startline="80" endline="83">areGradesRecieved</references>
+        <references refid="classstudent_1aeb0bd465659ab78523d480c3dbdb91c4" compoundref="my__class_8cpp" startline="60" endline="63">getNumberGrades</references>
+        <referencedby refid="class_test_class_1a004fba1a5acbd0fa124423991cdbecc6" compoundref="test__my__class_8cpp" startline="671" endline="689">TestClass::test_invalid_getAverageGrade</referencedby>
+        <referencedby refid="class_test_class_1a5bce40ccf7736fbc388a88b45ecc837a" compoundref="test__my__class_8cpp" startline="617" endline="650">TestClass::test_valid_getAverageGrade</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classstudent_1a5b8d5fb4e7808bf944784fee64163017" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float student::getMaxGrade</definition>
+        <argsstring>()</argsstring>
+        <name>getMaxGrade</name>
+        <qualifiedname>student::getMaxGrade</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="my_class.h" line="35" column="10" bodyfile="my_class.cpp" bodystart="94" bodyend="109"/>
+        <references refid="classstudent_1a32cc913fd923914f73543d52937e8db5" compoundref="my__class_8cpp" startline="80" endline="83">areGradesRecieved</references>
+        <referencedby refid="class_test_class_1a3be3e0d4dfd31fbf8815911ccd6677de" compoundref="test__my__class_8cpp" startline="737" endline="754">TestClass::test_invalid_getMaxGrade</referencedby>
+        <referencedby refid="class_test_class_1a865aecb24079358f3c4caaae4c82f2bf" compoundref="test__my__class_8cpp" startline="717" endline="735">TestClass::test_valid_getMaxGrade</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classstudent_1a8c23a42b02e472eab631d8a1485fc7b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float student::getMinGrade</definition>
+        <argsstring>()</argsstring>
+        <name>getMinGrade</name>
+        <qualifiedname>student::getMinGrade</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="my_class.h" line="36" column="10" bodyfile="my_class.cpp" bodystart="111" bodyend="126"/>
+        <references refid="classstudent_1a32cc913fd923914f73543d52937e8db5" compoundref="my__class_8cpp" startline="80" endline="83">areGradesRecieved</references>
+        <referencedby refid="class_test_class_1abcc1dc08418b6442972dce609f7b0baa" compoundref="test__my__class_8cpp" startline="790" endline="807">TestClass::test_invalid_getMinGrade</referencedby>
+        <referencedby refid="class_test_class_1a77b1e67cf0fd08474cf36ebb58a5ae96" compoundref="test__my__class_8cpp" startline="770" endline="788">TestClass::test_valid_getMinGrade</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="my_class.h" line="11" column="1" bodyfile="my_class.h" bodystart="12" bodyend="37"/>
+    <listofallmembers>
+      <member refid="classstudent_1ae4a42aae88371da3d7a2a045546c55f5" prot="public" virt="non-virtual"><scope>student</scope><name>addNewGrade</name></member>
+      <member refid="classstudent_1a32cc913fd923914f73543d52937e8db5" prot="public" virt="non-virtual"><scope>student</scope><name>areGradesRecieved</name></member>
+      <member refid="classstudent_1a50faf390a6cdd2620af4548d48325116" prot="public" virt="non-virtual"><scope>student</scope><name>getAverageGrade</name></member>
+      <member refid="classstudent_1afb9505bad4424cd24c1c9c6ed9a8ae6b" prot="public" virt="non-virtual"><scope>student</scope><name>getGrades</name></member>
+      <member refid="classstudent_1a5b8d5fb4e7808bf944784fee64163017" prot="public" virt="non-virtual"><scope>student</scope><name>getMaxGrade</name></member>
+      <member refid="classstudent_1a8c23a42b02e472eab631d8a1485fc7b1" prot="public" virt="non-virtual"><scope>student</scope><name>getMinGrade</name></member>
+      <member refid="classstudent_1ac60ff0fd8505a01c7a929abe49e91334" prot="public" virt="non-virtual"><scope>student</scope><name>getName</name></member>
+      <member refid="classstudent_1ae378080083989197920381b03fd91dbd" prot="public" virt="non-virtual"><scope>student</scope><name>getNumber</name></member>
+      <member refid="classstudent_1aeb0bd465659ab78523d480c3dbdb91c4" prot="public" virt="non-virtual"><scope>student</scope><name>getNumberGrades</name></member>
+      <member refid="classstudent_1aa8690e8ffa901b35cdaaa4fa095ef245" prot="private" virt="non-virtual"><scope>student</scope><name>grades</name></member>
+      <member refid="classstudent_1a45bb4aae27631819a5b0d1b2ab8a6f32" prot="private" virt="non-virtual"><scope>student</scope><name>isValidGrade</name></member>
+      <member refid="classstudent_1a0f7aaac883ee3d37b6ff77a2bf5f8b2f" prot="private" virt="non-virtual"><scope>student</scope><name>isValidName</name></member>
+      <member refid="classstudent_1a8bba46a454eaecf8619a68c4c38c7b8d" prot="private" virt="non-virtual"><scope>student</scope><name>name</name></member>
+      <member refid="classstudent_1ab3bb5637a4a41bebea9ec0a152f979b0" prot="private" virt="non-virtual"><scope>student</scope><name>number</name></member>
+      <member refid="classstudent_1a64d0ed3d4c97f02d2915e181eab4d85f" prot="public" virt="non-virtual"><scope>student</scope><name>setName</name></member>
+      <member refid="classstudent_1aa5656a3bae199b4707ca72d22c9f3298" prot="public" virt="non-virtual"><scope>student</scope><name>setNumber</name></member>
+      <member refid="classstudent_1af407df3500e1a5e61cb66ecff1c95726" prot="public" virt="non-virtual"><scope>student</scope><name>student</name></member>
+      <member refid="classstudent_1a75949576fea36961a3ccbc1588679d81" prot="private" virt="non-virtual"><scope>student</scope><name>sum</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

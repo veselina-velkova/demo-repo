@@ -1,0 +1,801 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_test_class" kind="class" language="C++" prot="public">
+    <compoundname>TestClass</compoundname>
+    <includes refid="test__my__class_8hpp" local="no">test_my_class.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_test_class_1a95cd519692392559626675ea4c00778d" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string TestClass::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <qualifiedname>TestClass::name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test_my_class.hpp" line="8" column="16" bodyfile="test_my_class.hpp" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_test_class_1a8def70f9b94b89a71ce78520bc13b4b7" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int TestClass::number</definition>
+        <argsstring></argsstring>
+        <name>number</name>
+        <qualifiedname>TestClass::number</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test_my_class.hpp" line="9" column="8" bodyfile="test_my_class.hpp" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_test_class_1a0d6c1bea20532835f675b8b8849f5beb" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float TestClass::sum</definition>
+        <argsstring></argsstring>
+        <name>sum</name>
+        <qualifiedname>TestClass::sum</qualifiedname>
+        <initializer>= 0.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test_my_class.hpp" line="10" column="10" bodyfile="test_my_class.hpp" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_test_class_1a1fc239a01b6ce4631d32f00ee0a869fb" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; float &gt;</type>
+        <definition>std::vector&lt;float&gt; TestClass::grades</definition>
+        <argsstring></argsstring>
+        <name>grades</name>
+        <qualifiedname>TestClass::grades</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test_my_class.hpp" line="11" column="16" bodyfile="test_my_class.hpp" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_test_class_1a09903432ed60c7c38f1beccc4cf18987" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TestClass::TestClass</definition>
+        <argsstring>()</argsstring>
+        <name>TestClass</name>
+        <qualifiedname>TestClass::TestClass</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test_my_class.hpp" line="14" column="4" bodyfile="test_my_class.cpp" bodystart="40" bodyend="46"/>
+        <references refid="my__class_8h_1acfe807b192670afc370c3385f235d02e" compoundref="my__class_8h" startline="7">MIN_GRADES</references>
+      </memberdef>
+      <memberdef kind="function" id="class_test_class_1ac7022e0ec096e0c93103acde04be3c74" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TestClass::test_getNumber</definition>
+        <argsstring>()</argsstring>
+        <name>test_getNumber</name>
+        <qualifiedname>TestClass::test_getNumber</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test_my_class.hpp" line="17" column="9" bodyfile="test_my_class.cpp" bodystart="48" bodyend="60"/>
+        <referencedby refid="test__my__class_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="test__my__class_8cpp" startline="859" endline="873">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_test_class_1aeccdc78fdf91ccc1ff2e49ed312a17c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TestClass::test_valid_getNumber</definition>
+        <argsstring>()</argsstring>
+        <name>test_valid_getNumber</name>
+        <qualifiedname>TestClass::test_valid_getNumber</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test_my_class.hpp" line="18" column="9" bodyfile="test_my_class.cpp" bodystart="62" bodyend="116"/>
+        <references refid="test__my__class_8cpp_1a499b5f8b1de5adf6c8f5dcfc4e029e78" compoundref="test__my__class_8cpp" startline="27">TEST_CLASS_LARGE_NEGATIVE_INT</references>
+        <references refid="test__my__class_8cpp_1aa346b938ba595340170d82adb6728c5c" compoundref="test__my__class_8cpp" startline="26">TEST_CLASS_LARGE_POSITIVE_INT</references>
+        <references refid="test__my__class_8cpp_1a8d4311a74377b01718a34f01d9abff5a" compoundref="test__my__class_8cpp" startline="21">TEST_CLASS_NEGATIVE_INT</references>
+        <references refid="test__my__class_8cpp_1ab32e1cdc7c0f819a550949197a24c927" compoundref="test__my__class_8cpp" startline="24">TEST_CLASS_NOT_THAT_LARGE_NEGATIVE_INT</references>
+        <references refid="test__my__class_8cpp_1a21b8cfa5a18537c6aef7708e2a9e6487" compoundref="test__my__class_8cpp" startline="23">TEST_CLASS_NOT_THAT_LARGE_POS_INT</references>
+        <references refid="test__my__class_8cpp_1a7027395f6b75ff8d6a0b6c23bdce3d59" compoundref="test__my__class_8cpp" startline="20">TEST_CLASS_POSITIVE_INT</references>
+        <references refid="test__my__class_8cpp_1accacf6db90d038b53d83e9dd24af7645" compoundref="test__my__class_8cpp" startline="34">TEST_CLASS_VALID_STRING</references>
+        <references refid="test__my__class_8cpp_1a722bf56e11fd344438ab4facc3990c84" compoundref="test__my__class_8cpp" startline="33">TEST_CLASS_VALID_STRING_DASH</references>
+      </memberdef>
+      <memberdef kind="function" id="class_test_class_1aa030f38a05c8b80ee00ee0867b5f0177" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TestClass::test_invalid_getNumber</definition>
+        <argsstring>()</argsstring>
+        <name>test_invalid_getNumber</name>
+        <qualifiedname>TestClass::test_invalid_getNumber</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test_my_class.hpp" line="19" column="9" bodyfile="test_my_class.cpp" bodystart="132" bodyend="276"/>
+        <references refid="classstudent_1ae378080083989197920381b03fd91dbd" compoundref="my__class_8cpp" startline="35" endline="38">student::getNumber</references>
+        <references refid="test__my__class_8cpp_1ab77e07f639edd98b5a62e3491ed487a3" compoundref="test__my__class_8cpp" startline="11">IS_TRUE</references>
+        <references refid="test__my__class_8cpp_1a0e0c5bcf70aa9ea616f1743de4dea049" compoundref="test__my__class_8cpp" startline="36">TEST_CLASS_CHAR_LETTER</references>
+        <references refid="test__my__class_8cpp_1a6d0027f40f01caacde7c235656bffecb" compoundref="test__my__class_8cpp" startline="37">TEST_CLASS_CHAR_NUMBER</references>
+        <references refid="test__my__class_8cpp_1ada700fb90c41c3eac4ba7f68231de9b9" compoundref="test__my__class_8cpp" startline="38">TEST_CLASS_CHAR_SYMBOL</references>
+        <references refid="test__my__class_8cpp_1ae4f2604a8d4d27c8777eb73888962f20" compoundref="test__my__class_8cpp" startline="32">TEST_CLASS_INVALID_STRING</references>
+        <references refid="test__my__class_8cpp_1a499b5f8b1de5adf6c8f5dcfc4e029e78" compoundref="test__my__class_8cpp" startline="27">TEST_CLASS_LARGE_NEGATIVE_INT</references>
+        <references refid="test__my__class_8cpp_1aa346b938ba595340170d82adb6728c5c" compoundref="test__my__class_8cpp" startline="26">TEST_CLASS_LARGE_POSITIVE_INT</references>
+        <references refid="test__my__class_8cpp_1a2336ba2a2f2284aa6bede29ef76ade9e" compoundref="test__my__class_8cpp" startline="30">TEST_CLASS_LONG_LONG_INT_NEGATIVE</references>
+        <references refid="test__my__class_8cpp_1ad2994a78569917b8170028fb5cf19d47" compoundref="test__my__class_8cpp" startline="14">TEST_CLASS_NEGATIVE_DOUBLE</references>
+        <references refid="test__my__class_8cpp_1a1e43356f8390fbf53adf28e6d8ea32e1" compoundref="test__my__class_8cpp" startline="17">TEST_CLASS_NEGATIVE_FLOAT</references>
+        <references refid="test__my__class_8cpp_1a8d4311a74377b01718a34f01d9abff5a" compoundref="test__my__class_8cpp" startline="21">TEST_CLASS_NEGATIVE_INT</references>
+        <references refid="test__my__class_8cpp_1ab32e1cdc7c0f819a550949197a24c927" compoundref="test__my__class_8cpp" startline="24">TEST_CLASS_NOT_THAT_LARGE_NEGATIVE_INT</references>
+        <references refid="test__my__class_8cpp_1a21b8cfa5a18537c6aef7708e2a9e6487" compoundref="test__my__class_8cpp" startline="23">TEST_CLASS_NOT_THAT_LARGE_POS_INT</references>
+        <references refid="test__my__class_8cpp_1a97c24a136dc8132fefff4fc8dde6d1c9" compoundref="test__my__class_8cpp" startline="13">TEST_CLASS_POSITIVE_DOUBLE</references>
+        <references refid="test__my__class_8cpp_1ab855b8c59d654e7ef48e07cdd9ff8c77" compoundref="test__my__class_8cpp" startline="16">TEST_CLASS_POSITIVE_FLOAT</references>
+        <references refid="test__my__class_8cpp_1a7027395f6b75ff8d6a0b6c23bdce3d59" compoundref="test__my__class_8cpp" startline="20">TEST_CLASS_POSITIVE_INT</references>
+        <references refid="test__my__class_8cpp_1a84adeb82ceca95387cc5ed5f36e83a0d" compoundref="test__my__class_8cpp" startline="29">TEST_CLASS_UNSIGNED_LONG_LONG_INT</references>
+        <references refid="test__my__class_8cpp_1accacf6db90d038b53d83e9dd24af7645" compoundref="test__my__class_8cpp" startline="34">TEST_CLASS_VALID_STRING</references>
+      </memberdef>
+      <memberdef kind="function" id="class_test_class_1aa8eb54e569c7b82eddb4faa1c84b5434" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TestClass::check_try_catch_getNumber</definition>
+        <argsstring>(const int num, const std::string &amp;name)</argsstring>
+        <name>check_try_catch_getNumber</name>
+        <qualifiedname>TestClass::check_try_catch_getNumber</qualifiedname>
+        <param>
+          <type>const int</type>
+          <declname>num</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test_my_class.hpp" line="20" column="9" bodyfile="test_my_class.cpp" bodystart="118" bodyend="130"/>
+        <references refid="classstudent_1ae378080083989197920381b03fd91dbd" compoundref="my__class_8cpp" startline="35" endline="38">student::getNumber</references>
+        <references refid="test__my__class_8cpp_1ab77e07f639edd98b5a62e3491ed487a3" compoundref="test__my__class_8cpp" startline="11">IS_TRUE</references>
+      </memberdef>
+      <memberdef kind="function" id="class_test_class_1afb9755c703e20757d036f2f704515392" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TestClass::test_getName</definition>
+        <argsstring>()</argsstring>
+        <name>test_getName</name>
+        <qualifiedname>TestClass::test_getName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test_my_class.hpp" line="22" column="9" bodyfile="test_my_class.cpp" bodystart="278" bodyend="290"/>
+        <referencedby refid="test__my__class_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="test__my__class_8cpp" startline="859" endline="873">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_test_class_1aa3f746240e971dbd4ca997e0ff565dd4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TestClass::test_valid_getName</definition>
+        <argsstring>()</argsstring>
+        <name>test_valid_getName</name>
+        <qualifiedname>TestClass::test_valid_getName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test_my_class.hpp" line="23" column="9" bodyfile="test_my_class.cpp" bodystart="306" bodyend="325"/>
+        <references refid="test__my__class_8cpp_1a0e0c5bcf70aa9ea616f1743de4dea049" compoundref="test__my__class_8cpp" startline="36">TEST_CLASS_CHAR_LETTER</references>
+        <references refid="test__my__class_8cpp_1a7027395f6b75ff8d6a0b6c23bdce3d59" compoundref="test__my__class_8cpp" startline="20">TEST_CLASS_POSITIVE_INT</references>
+        <references refid="test__my__class_8cpp_1accacf6db90d038b53d83e9dd24af7645" compoundref="test__my__class_8cpp" startline="34">TEST_CLASS_VALID_STRING</references>
+        <references refid="test__my__class_8cpp_1a722bf56e11fd344438ab4facc3990c84" compoundref="test__my__class_8cpp" startline="33">TEST_CLASS_VALID_STRING_DASH</references>
+      </memberdef>
+      <memberdef kind="function" id="class_test_class_1af8c3e3d546e53b0aefa473a55cf8de9c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TestClass::test_invalid_getName</definition>
+        <argsstring>()</argsstring>
+        <name>test_invalid_getName</name>
+        <qualifiedname>TestClass::test_invalid_getName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test_my_class.hpp" line="24" column="9" bodyfile="test_my_class.cpp" bodystart="327" bodyend="345"/>
+        <references refid="test__my__class_8cpp_1a6d0027f40f01caacde7c235656bffecb" compoundref="test__my__class_8cpp" startline="37">TEST_CLASS_CHAR_NUMBER</references>
+        <references refid="test__my__class_8cpp_1ada700fb90c41c3eac4ba7f68231de9b9" compoundref="test__my__class_8cpp" startline="38">TEST_CLASS_CHAR_SYMBOL</references>
+        <references refid="test__my__class_8cpp_1ae4f2604a8d4d27c8777eb73888962f20" compoundref="test__my__class_8cpp" startline="32">TEST_CLASS_INVALID_STRING</references>
+        <references refid="test__my__class_8cpp_1a7027395f6b75ff8d6a0b6c23bdce3d59" compoundref="test__my__class_8cpp" startline="20">TEST_CLASS_POSITIVE_INT</references>
+      </memberdef>
+      <memberdef kind="function" id="class_test_class_1a5220911e29eaf6083958229f540e095b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TestClass::check_getName</definition>
+        <argsstring>(const int number, const std::string &amp;name)</argsstring>
+        <name>check_getName</name>
+        <qualifiedname>TestClass::check_getName</qualifiedname>
+        <param>
+          <type>const int</type>
+          <declname>number</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test_my_class.hpp" line="25" column="9" bodyfile="test_my_class.cpp" bodystart="292" bodyend="304"/>
+        <references refid="classstudent_1ac60ff0fd8505a01c7a929abe49e91334" compoundref="my__class_8cpp" startline="40" endline="43">student::getName</references>
+        <references refid="test__my__class_8cpp_1ab77e07f639edd98b5a62e3491ed487a3" compoundref="test__my__class_8cpp" startline="11">IS_TRUE</references>
+      </memberdef>
+      <memberdef kind="function" id="class_test_class_1a4f999d196c8a0aa5da1e3f16d4b773ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TestClass::test_setNumber</definition>
+        <argsstring>()</argsstring>
+        <name>test_setNumber</name>
+        <qualifiedname>TestClass::test_setNumber</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test_my_class.hpp" line="27" column="9" bodyfile="test_my_class.cpp" bodystart="347" bodyend="359"/>
+        <referencedby refid="test__my__class_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="test__my__class_8cpp" startline="859" endline="873">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_test_class_1a99b9f14083e34cbdbe07040bb8dc7279" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TestClass::test_valid_setNumber</definition>
+        <argsstring>()</argsstring>
+        <name>test_valid_setNumber</name>
+        <qualifiedname>TestClass::test_valid_setNumber</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test_my_class.hpp" line="28" column="9" bodyfile="test_my_class.cpp" bodystart="380" bodyend="405"/>
+        <references refid="test__my__class_8cpp_1a499b5f8b1de5adf6c8f5dcfc4e029e78" compoundref="test__my__class_8cpp" startline="27">TEST_CLASS_LARGE_NEGATIVE_INT</references>
+        <references refid="test__my__class_8cpp_1aa346b938ba595340170d82adb6728c5c" compoundref="test__my__class_8cpp" startline="26">TEST_CLASS_LARGE_POSITIVE_INT</references>
+        <references refid="test__my__class_8cpp_1a8d4311a74377b01718a34f01d9abff5a" compoundref="test__my__class_8cpp" startline="21">TEST_CLASS_NEGATIVE_INT</references>
+        <references refid="test__my__class_8cpp_1ab32e1cdc7c0f819a550949197a24c927" compoundref="test__my__class_8cpp" startline="24">TEST_CLASS_NOT_THAT_LARGE_NEGATIVE_INT</references>
+        <references refid="test__my__class_8cpp_1a21b8cfa5a18537c6aef7708e2a9e6487" compoundref="test__my__class_8cpp" startline="23">TEST_CLASS_NOT_THAT_LARGE_POS_INT</references>
+        <references refid="test__my__class_8cpp_1a7027395f6b75ff8d6a0b6c23bdce3d59" compoundref="test__my__class_8cpp" startline="20">TEST_CLASS_POSITIVE_INT</references>
+      </memberdef>
+      <memberdef kind="function" id="class_test_class_1a4e70e9bb23c42c76f6b51094d94af7b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TestClass::test_invalid_setNumber</definition>
+        <argsstring>()</argsstring>
+        <name>test_invalid_setNumber</name>
+        <qualifiedname>TestClass::test_invalid_setNumber</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test_my_class.hpp" line="29" column="9" bodyfile="test_my_class.cpp" bodystart="407" bodyend="451"/>
+        <references refid="test__my__class_8cpp_1a0e0c5bcf70aa9ea616f1743de4dea049" compoundref="test__my__class_8cpp" startline="36">TEST_CLASS_CHAR_LETTER</references>
+        <references refid="test__my__class_8cpp_1a6d0027f40f01caacde7c235656bffecb" compoundref="test__my__class_8cpp" startline="37">TEST_CLASS_CHAR_NUMBER</references>
+        <references refid="test__my__class_8cpp_1ada700fb90c41c3eac4ba7f68231de9b9" compoundref="test__my__class_8cpp" startline="38">TEST_CLASS_CHAR_SYMBOL</references>
+        <references refid="test__my__class_8cpp_1a2336ba2a2f2284aa6bede29ef76ade9e" compoundref="test__my__class_8cpp" startline="30">TEST_CLASS_LONG_LONG_INT_NEGATIVE</references>
+        <references refid="test__my__class_8cpp_1ad2994a78569917b8170028fb5cf19d47" compoundref="test__my__class_8cpp" startline="14">TEST_CLASS_NEGATIVE_DOUBLE</references>
+        <references refid="test__my__class_8cpp_1a1e43356f8390fbf53adf28e6d8ea32e1" compoundref="test__my__class_8cpp" startline="17">TEST_CLASS_NEGATIVE_FLOAT</references>
+        <references refid="test__my__class_8cpp_1a97c24a136dc8132fefff4fc8dde6d1c9" compoundref="test__my__class_8cpp" startline="13">TEST_CLASS_POSITIVE_DOUBLE</references>
+        <references refid="test__my__class_8cpp_1ab855b8c59d654e7ef48e07cdd9ff8c77" compoundref="test__my__class_8cpp" startline="16">TEST_CLASS_POSITIVE_FLOAT</references>
+        <references refid="test__my__class_8cpp_1a84adeb82ceca95387cc5ed5f36e83a0d" compoundref="test__my__class_8cpp" startline="29">TEST_CLASS_UNSIGNED_LONG_LONG_INT</references>
+      </memberdef>
+      <memberdef kind="function" id="class_test_class_1abc94be115d46abbe7582b233a294bfce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TestClass::check_setNumber</definition>
+        <argsstring>(const int new_number)</argsstring>
+        <name>check_setNumber</name>
+        <qualifiedname>TestClass::check_setNumber</qualifiedname>
+        <param>
+          <type>const int</type>
+          <declname>new_number</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test_my_class.hpp" line="30" column="9" bodyfile="test_my_class.cpp" bodystart="361" bodyend="378"/>
+        <references refid="classstudent_1ae378080083989197920381b03fd91dbd" compoundref="my__class_8cpp" startline="35" endline="38">student::getNumber</references>
+        <references refid="test__my__class_8cpp_1ab77e07f639edd98b5a62e3491ed487a3" compoundref="test__my__class_8cpp" startline="11">IS_TRUE</references>
+        <references refid="classstudent_1aa5656a3bae199b4707ca72d22c9f3298" compoundref="my__class_8cpp" startline="45" endline="48">student::setNumber</references>
+      </memberdef>
+      <memberdef kind="function" id="class_test_class_1aafc888ca6e42adec762d1419507962e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TestClass::test_setName</definition>
+        <argsstring>()</argsstring>
+        <name>test_setName</name>
+        <qualifiedname>TestClass::test_setName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test_my_class.hpp" line="32" column="9" bodyfile="test_my_class.cpp" bodystart="453" bodyend="465"/>
+        <referencedby refid="test__my__class_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="test__my__class_8cpp" startline="859" endline="873">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_test_class_1a21faf8377ce1d26285d1d18eb53fc5ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TestClass::test_valid_setName</definition>
+        <argsstring>()</argsstring>
+        <name>test_valid_setName</name>
+        <qualifiedname>TestClass::test_valid_setName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test_my_class.hpp" line="33" column="9" bodyfile="test_my_class.cpp" bodystart="467" bodyend="481"/>
+        <references refid="test__my__class_8cpp_1a0e0c5bcf70aa9ea616f1743de4dea049" compoundref="test__my__class_8cpp" startline="36">TEST_CLASS_CHAR_LETTER</references>
+        <references refid="test__my__class_8cpp_1accacf6db90d038b53d83e9dd24af7645" compoundref="test__my__class_8cpp" startline="34">TEST_CLASS_VALID_STRING</references>
+        <references refid="test__my__class_8cpp_1a722bf56e11fd344438ab4facc3990c84" compoundref="test__my__class_8cpp" startline="33">TEST_CLASS_VALID_STRING_DASH</references>
+      </memberdef>
+      <memberdef kind="function" id="class_test_class_1af58b4f2a4bd4e275cd7d442a6d577ac6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TestClass::test_invalid_setName</definition>
+        <argsstring>()</argsstring>
+        <name>test_invalid_setName</name>
+        <qualifiedname>TestClass::test_invalid_setName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test_my_class.hpp" line="34" column="9" bodyfile="test_my_class.cpp" bodystart="483" bodyend="497"/>
+        <references refid="test__my__class_8cpp_1a6d0027f40f01caacde7c235656bffecb" compoundref="test__my__class_8cpp" startline="37">TEST_CLASS_CHAR_NUMBER</references>
+        <references refid="test__my__class_8cpp_1ada700fb90c41c3eac4ba7f68231de9b9" compoundref="test__my__class_8cpp" startline="38">TEST_CLASS_CHAR_SYMBOL</references>
+        <references refid="test__my__class_8cpp_1ae4f2604a8d4d27c8777eb73888962f20" compoundref="test__my__class_8cpp" startline="32">TEST_CLASS_INVALID_STRING</references>
+      </memberdef>
+      <memberdef kind="function" id="class_test_class_1a8849cbe2d80fc994d137a25b7689ea78" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TestClass::check_setName</definition>
+        <argsstring>(const std::string &amp;new_name)</argsstring>
+        <name>check_setName</name>
+        <qualifiedname>TestClass::check_setName</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>new_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test_my_class.hpp" line="35" column="9" bodyfile="test_my_class.cpp" bodystart="499" bodyend="515"/>
+        <references refid="classstudent_1ac60ff0fd8505a01c7a929abe49e91334" compoundref="my__class_8cpp" startline="40" endline="43">student::getName</references>
+        <references refid="test__my__class_8cpp_1ab77e07f639edd98b5a62e3491ed487a3" compoundref="test__my__class_8cpp" startline="11">IS_TRUE</references>
+        <references refid="classstudent_1a64d0ed3d4c97f02d2915e181eab4d85f" compoundref="my__class_8cpp" startline="50" endline="58">student::setName</references>
+      </memberdef>
+      <memberdef kind="function" id="class_test_class_1a160cc248df643477304eea8252339e17" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TestClass::test_addNewGrade</definition>
+        <argsstring>()</argsstring>
+        <name>test_addNewGrade</name>
+        <qualifiedname>TestClass::test_addNewGrade</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test_my_class.hpp" line="37" column="9" bodyfile="test_my_class.cpp" bodystart="517" bodyend="529"/>
+        <referencedby refid="test__my__class_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="test__my__class_8cpp" startline="859" endline="873">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_test_class_1a1be405fb18449c3872587853f9a52e57" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TestClass::test_valid_addNewGrade</definition>
+        <argsstring>()</argsstring>
+        <name>test_valid_addNewGrade</name>
+        <qualifiedname>TestClass::test_valid_addNewGrade</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test_my_class.hpp" line="38" column="9" bodyfile="test_my_class.cpp" bodystart="531" bodyend="543"/>
+        <references refid="classstudent_1aeb0bd465659ab78523d480c3dbdb91c4" compoundref="my__class_8cpp" startline="60" endline="63">student::getNumberGrades</references>
+        <references refid="my__class_8h_1a888557700c666956fe79990e5d81b6f5" compoundref="my__class_8h" startline="10">HIGHEST_GRADE</references>
+        <references refid="my__class_8h_1a9266bbaee8536bb3af5cd9557ba27871" compoundref="my__class_8h" startline="9">LOWEST_GRADE</references>
+        <references refid="my__class_8h_1a6a68cbead10ddb7453cd17e368acc55e" compoundref="my__class_8h" startline="8">MAX_GRADES</references>
+        <references refid="test__my__class_8cpp_1a7027395f6b75ff8d6a0b6c23bdce3d59" compoundref="test__my__class_8cpp" startline="20">TEST_CLASS_POSITIVE_INT</references>
+        <references refid="test__my__class_8cpp_1accacf6db90d038b53d83e9dd24af7645" compoundref="test__my__class_8cpp" startline="34">TEST_CLASS_VALID_STRING</references>
+      </memberdef>
+      <memberdef kind="function" id="class_test_class_1a51a2c92494f26f7c449ca55c0a33ac4e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TestClass::test_invalid_addNewGrade</definition>
+        <argsstring>()</argsstring>
+        <name>test_invalid_addNewGrade</name>
+        <qualifiedname>TestClass::test_invalid_addNewGrade</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test_my_class.hpp" line="39" column="9" bodyfile="test_my_class.cpp" bodystart="545" bodyend="582"/>
+        <references refid="classstudent_1aeb0bd465659ab78523d480c3dbdb91c4" compoundref="my__class_8cpp" startline="60" endline="63">student::getNumberGrades</references>
+        <references refid="my__class_8h_1a888557700c666956fe79990e5d81b6f5" compoundref="my__class_8h" startline="10">HIGHEST_GRADE</references>
+        <references refid="my__class_8h_1a9266bbaee8536bb3af5cd9557ba27871" compoundref="my__class_8h" startline="9">LOWEST_GRADE</references>
+        <references refid="my__class_8h_1a6a68cbead10ddb7453cd17e368acc55e" compoundref="my__class_8h" startline="8">MAX_GRADES</references>
+        <references refid="test__my__class_8cpp_1a4543514127209ca87261a34e523e6184" compoundref="test__my__class_8cpp" startline="18">TEST_CLASS_BIG_POSITIVE_FLOAT</references>
+        <references refid="test__my__class_8cpp_1a0e0c5bcf70aa9ea616f1743de4dea049" compoundref="test__my__class_8cpp" startline="36">TEST_CLASS_CHAR_LETTER</references>
+        <references refid="test__my__class_8cpp_1a6d0027f40f01caacde7c235656bffecb" compoundref="test__my__class_8cpp" startline="37">TEST_CLASS_CHAR_NUMBER</references>
+        <references refid="test__my__class_8cpp_1ada700fb90c41c3eac4ba7f68231de9b9" compoundref="test__my__class_8cpp" startline="38">TEST_CLASS_CHAR_SYMBOL</references>
+        <references refid="test__my__class_8cpp_1a1e43356f8390fbf53adf28e6d8ea32e1" compoundref="test__my__class_8cpp" startline="17">TEST_CLASS_NEGATIVE_FLOAT</references>
+        <references refid="test__my__class_8cpp_1a7027395f6b75ff8d6a0b6c23bdce3d59" compoundref="test__my__class_8cpp" startline="20">TEST_CLASS_POSITIVE_INT</references>
+        <references refid="test__my__class_8cpp_1accacf6db90d038b53d83e9dd24af7645" compoundref="test__my__class_8cpp" startline="34">TEST_CLASS_VALID_STRING</references>
+      </memberdef>
+      <memberdef kind="function" id="class_test_class_1a4386e8c4061b3c0192fd52f6699780d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TestClass::check_addNewGrade</definition>
+        <argsstring>(student &amp;test_student, const float grade)</argsstring>
+        <name>check_addNewGrade</name>
+        <qualifiedname>TestClass::check_addNewGrade</qualifiedname>
+        <param>
+          <type><ref refid="classstudent" kindref="compound">student</ref> &amp;</type>
+          <declname>test_student</declname>
+        </param>
+        <param>
+          <type>const float</type>
+          <declname>grade</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test_my_class.hpp" line="40" column="9" bodyfile="test_my_class.cpp" bodystart="584" bodyend="601"/>
+        <references refid="classstudent_1ae4a42aae88371da3d7a2a045546c55f5" compoundref="my__class_8cpp" startline="65" endline="78">student::addNewGrade</references>
+        <references refid="classstudent_1aeb0bd465659ab78523d480c3dbdb91c4" compoundref="my__class_8cpp" startline="60" endline="63">student::getNumberGrades</references>
+        <references refid="test__my__class_8cpp_1ab77e07f639edd98b5a62e3491ed487a3" compoundref="test__my__class_8cpp" startline="11">IS_TRUE</references>
+      </memberdef>
+      <memberdef kind="function" id="class_test_class_1a3e5dd2e82e2205841f63f2a822c749b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TestClass::test_getAverageGrade</definition>
+        <argsstring>()</argsstring>
+        <name>test_getAverageGrade</name>
+        <qualifiedname>TestClass::test_getAverageGrade</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test_my_class.hpp" line="42" column="9" bodyfile="test_my_class.cpp" bodystart="603" bodyend="615"/>
+        <referencedby refid="test__my__class_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="test__my__class_8cpp" startline="859" endline="873">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_test_class_1a5bce40ccf7736fbc388a88b45ecc837a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TestClass::test_valid_getAverageGrade</definition>
+        <argsstring>()</argsstring>
+        <name>test_valid_getAverageGrade</name>
+        <qualifiedname>TestClass::test_valid_getAverageGrade</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test_my_class.hpp" line="43" column="9" bodyfile="test_my_class.cpp" bodystart="617" bodyend="650"/>
+        <references refid="classstudent_1a50faf390a6cdd2620af4548d48325116" compoundref="my__class_8cpp" startline="85" endline="92">student::getAverageGrade</references>
+        <references refid="test__my__class_8cpp_1ab77e07f639edd98b5a62e3491ed487a3" compoundref="test__my__class_8cpp" startline="11">IS_TRUE</references>
+        <references refid="test__my__class_8cpp_1a7027395f6b75ff8d6a0b6c23bdce3d59" compoundref="test__my__class_8cpp" startline="20">TEST_CLASS_POSITIVE_INT</references>
+        <references refid="test__my__class_8cpp_1accacf6db90d038b53d83e9dd24af7645" compoundref="test__my__class_8cpp" startline="34">TEST_CLASS_VALID_STRING</references>
+      </memberdef>
+      <memberdef kind="function" id="class_test_class_1a004fba1a5acbd0fa124423991cdbecc6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TestClass::test_invalid_getAverageGrade</definition>
+        <argsstring>()</argsstring>
+        <name>test_invalid_getAverageGrade</name>
+        <qualifiedname>TestClass::test_invalid_getAverageGrade</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test_my_class.hpp" line="44" column="9" bodyfile="test_my_class.cpp" bodystart="671" bodyend="689"/>
+        <references refid="classstudent_1a50faf390a6cdd2620af4548d48325116" compoundref="my__class_8cpp" startline="85" endline="92">student::getAverageGrade</references>
+        <references refid="test__my__class_8cpp_1ab77e07f639edd98b5a62e3491ed487a3" compoundref="test__my__class_8cpp" startline="11">IS_TRUE</references>
+        <references refid="test__my__class_8cpp_1a7027395f6b75ff8d6a0b6c23bdce3d59" compoundref="test__my__class_8cpp" startline="20">TEST_CLASS_POSITIVE_INT</references>
+        <references refid="test__my__class_8cpp_1accacf6db90d038b53d83e9dd24af7645" compoundref="test__my__class_8cpp" startline="34">TEST_CLASS_VALID_STRING</references>
+      </memberdef>
+      <memberdef kind="function" id="class_test_class_1a0006f0a28764ef0cde04ca173650cc77" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float TestClass::calculate_average</definition>
+        <argsstring>(std::vector&lt; float &gt; &amp;grades)</argsstring>
+        <name>calculate_average</name>
+        <qualifiedname>TestClass::calculate_average</qualifiedname>
+        <param>
+          <type>std::vector&lt; float &gt; &amp;</type>
+          <declname>grades</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test_my_class.hpp" line="45" column="10" bodyfile="test_my_class.cpp" bodystart="652" bodyend="669"/>
+        <references refid="my__class_8h_1a888557700c666956fe79990e5d81b6f5" compoundref="my__class_8h" startline="10">HIGHEST_GRADE</references>
+        <references refid="my__class_8h_1a9266bbaee8536bb3af5cd9557ba27871" compoundref="my__class_8h" startline="9">LOWEST_GRADE</references>
+      </memberdef>
+      <memberdef kind="function" id="class_test_class_1ac5ae467fa892e345b59517b7be11741b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TestClass::test_getMinGrade</definition>
+        <argsstring>()</argsstring>
+        <name>test_getMinGrade</name>
+        <qualifiedname>TestClass::test_getMinGrade</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test_my_class.hpp" line="47" column="9" bodyfile="test_my_class.cpp" bodystart="756" bodyend="768"/>
+        <referencedby refid="test__my__class_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="test__my__class_8cpp" startline="859" endline="873">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_test_class_1a77b1e67cf0fd08474cf36ebb58a5ae96" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TestClass::test_valid_getMinGrade</definition>
+        <argsstring>()</argsstring>
+        <name>test_valid_getMinGrade</name>
+        <qualifiedname>TestClass::test_valid_getMinGrade</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test_my_class.hpp" line="48" column="9" bodyfile="test_my_class.cpp" bodystart="770" bodyend="788"/>
+        <references refid="classstudent_1a8c23a42b02e472eab631d8a1485fc7b1" compoundref="my__class_8cpp" startline="111" endline="126">student::getMinGrade</references>
+        <references refid="test__my__class_8cpp_1ab77e07f639edd98b5a62e3491ed487a3" compoundref="test__my__class_8cpp" startline="11">IS_TRUE</references>
+        <references refid="test__my__class_8cpp_1a7027395f6b75ff8d6a0b6c23bdce3d59" compoundref="test__my__class_8cpp" startline="20">TEST_CLASS_POSITIVE_INT</references>
+        <references refid="test__my__class_8cpp_1accacf6db90d038b53d83e9dd24af7645" compoundref="test__my__class_8cpp" startline="34">TEST_CLASS_VALID_STRING</references>
+      </memberdef>
+      <memberdef kind="function" id="class_test_class_1abcc1dc08418b6442972dce609f7b0baa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TestClass::test_invalid_getMinGrade</definition>
+        <argsstring>()</argsstring>
+        <name>test_invalid_getMinGrade</name>
+        <qualifiedname>TestClass::test_invalid_getMinGrade</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test_my_class.hpp" line="49" column="9" bodyfile="test_my_class.cpp" bodystart="790" bodyend="807"/>
+        <references refid="classstudent_1a8c23a42b02e472eab631d8a1485fc7b1" compoundref="my__class_8cpp" startline="111" endline="126">student::getMinGrade</references>
+        <references refid="test__my__class_8cpp_1ab77e07f639edd98b5a62e3491ed487a3" compoundref="test__my__class_8cpp" startline="11">IS_TRUE</references>
+        <references refid="test__my__class_8cpp_1a7027395f6b75ff8d6a0b6c23bdce3d59" compoundref="test__my__class_8cpp" startline="20">TEST_CLASS_POSITIVE_INT</references>
+        <references refid="test__my__class_8cpp_1accacf6db90d038b53d83e9dd24af7645" compoundref="test__my__class_8cpp" startline="34">TEST_CLASS_VALID_STRING</references>
+      </memberdef>
+      <memberdef kind="function" id="class_test_class_1ad1018f29c78f7ec47a8c923b848a1495" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TestClass::fill_with_random_grades</definition>
+        <argsstring>(student &amp;test_student)</argsstring>
+        <name>fill_with_random_grades</name>
+        <qualifiedname>TestClass::fill_with_random_grades</qualifiedname>
+        <param>
+          <type><ref refid="classstudent" kindref="compound">student</ref> &amp;</type>
+          <declname>test_student</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test_my_class.hpp" line="51" column="9" bodyfile="test_my_class.cpp" bodystart="705" bodyend="715"/>
+        <references refid="classstudent_1aeb0bd465659ab78523d480c3dbdb91c4" compoundref="my__class_8cpp" startline="60" endline="63">student::getNumberGrades</references>
+        <references refid="my__class_8h_1a888557700c666956fe79990e5d81b6f5" compoundref="my__class_8h" startline="10">HIGHEST_GRADE</references>
+        <references refid="my__class_8h_1a9266bbaee8536bb3af5cd9557ba27871" compoundref="my__class_8h" startline="9">LOWEST_GRADE</references>
+        <references refid="my__class_8h_1a6a68cbead10ddb7453cd17e368acc55e" compoundref="my__class_8h" startline="8">MAX_GRADES</references>
+      </memberdef>
+      <memberdef kind="function" id="class_test_class_1acb6a86dccf2a6b72de6984a50fa815c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TestClass::test_getMaxGrade</definition>
+        <argsstring>()</argsstring>
+        <name>test_getMaxGrade</name>
+        <qualifiedname>TestClass::test_getMaxGrade</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test_my_class.hpp" line="52" column="9" bodyfile="test_my_class.cpp" bodystart="691" bodyend="703"/>
+        <referencedby refid="test__my__class_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="test__my__class_8cpp" startline="859" endline="873">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_test_class_1a865aecb24079358f3c4caaae4c82f2bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TestClass::test_valid_getMaxGrade</definition>
+        <argsstring>()</argsstring>
+        <name>test_valid_getMaxGrade</name>
+        <qualifiedname>TestClass::test_valid_getMaxGrade</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test_my_class.hpp" line="53" column="9" bodyfile="test_my_class.cpp" bodystart="717" bodyend="735"/>
+        <references refid="classstudent_1a5b8d5fb4e7808bf944784fee64163017" compoundref="my__class_8cpp" startline="94" endline="109">student::getMaxGrade</references>
+        <references refid="test__my__class_8cpp_1ab77e07f639edd98b5a62e3491ed487a3" compoundref="test__my__class_8cpp" startline="11">IS_TRUE</references>
+        <references refid="test__my__class_8cpp_1a7027395f6b75ff8d6a0b6c23bdce3d59" compoundref="test__my__class_8cpp" startline="20">TEST_CLASS_POSITIVE_INT</references>
+        <references refid="test__my__class_8cpp_1accacf6db90d038b53d83e9dd24af7645" compoundref="test__my__class_8cpp" startline="34">TEST_CLASS_VALID_STRING</references>
+      </memberdef>
+      <memberdef kind="function" id="class_test_class_1a3be3e0d4dfd31fbf8815911ccd6677de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TestClass::test_invalid_getMaxGrade</definition>
+        <argsstring>()</argsstring>
+        <name>test_invalid_getMaxGrade</name>
+        <qualifiedname>TestClass::test_invalid_getMaxGrade</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test_my_class.hpp" line="54" column="9" bodyfile="test_my_class.cpp" bodystart="737" bodyend="754"/>
+        <references refid="classstudent_1a5b8d5fb4e7808bf944784fee64163017" compoundref="my__class_8cpp" startline="94" endline="109">student::getMaxGrade</references>
+        <references refid="test__my__class_8cpp_1ab77e07f639edd98b5a62e3491ed487a3" compoundref="test__my__class_8cpp" startline="11">IS_TRUE</references>
+        <references refid="test__my__class_8cpp_1a7027395f6b75ff8d6a0b6c23bdce3d59" compoundref="test__my__class_8cpp" startline="20">TEST_CLASS_POSITIVE_INT</references>
+        <references refid="test__my__class_8cpp_1accacf6db90d038b53d83e9dd24af7645" compoundref="test__my__class_8cpp" startline="34">TEST_CLASS_VALID_STRING</references>
+      </memberdef>
+      <memberdef kind="function" id="class_test_class_1a38edab9e106cf75180805eb092feb9c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TestClass::test_getGrades</definition>
+        <argsstring>()</argsstring>
+        <name>test_getGrades</name>
+        <qualifiedname>TestClass::test_getGrades</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test_my_class.hpp" line="56" column="9" bodyfile="test_my_class.cpp" bodystart="809" bodyend="821"/>
+        <referencedby refid="test__my__class_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="test__my__class_8cpp" startline="859" endline="873">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_test_class_1ace77fb00ebaebd507b054de203970c46" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TestClass::test_valid_getGrades</definition>
+        <argsstring>()</argsstring>
+        <name>test_valid_getGrades</name>
+        <qualifiedname>TestClass::test_valid_getGrades</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test_my_class.hpp" line="57" column="9" bodyfile="test_my_class.cpp" bodystart="823" bodyend="832"/>
+        <references refid="test__my__class_8cpp_1a7027395f6b75ff8d6a0b6c23bdce3d59" compoundref="test__my__class_8cpp" startline="20">TEST_CLASS_POSITIVE_INT</references>
+        <references refid="test__my__class_8cpp_1accacf6db90d038b53d83e9dd24af7645" compoundref="test__my__class_8cpp" startline="34">TEST_CLASS_VALID_STRING</references>
+      </memberdef>
+      <memberdef kind="function" id="class_test_class_1a6e0c6406c513975c15c681592a40f29b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TestClass::test_invalid_getGrades</definition>
+        <argsstring>()</argsstring>
+        <name>test_invalid_getGrades</name>
+        <qualifiedname>TestClass::test_invalid_getGrades</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test_my_class.hpp" line="58" column="9" bodyfile="test_my_class.cpp" bodystart="834" bodyend="843"/>
+        <references refid="test__my__class_8cpp_1a7027395f6b75ff8d6a0b6c23bdce3d59" compoundref="test__my__class_8cpp" startline="20">TEST_CLASS_POSITIVE_INT</references>
+        <references refid="test__my__class_8cpp_1accacf6db90d038b53d83e9dd24af7645" compoundref="test__my__class_8cpp" startline="34">TEST_CLASS_VALID_STRING</references>
+      </memberdef>
+      <memberdef kind="function" id="class_test_class_1a06cdd6c8f5e4b7622d235597ed0997bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TestClass::check_are_received_grades_the_same</definition>
+        <argsstring>(student &amp;test_student, std::vector&lt; float &gt; &amp;temp_grades)</argsstring>
+        <name>check_are_received_grades_the_same</name>
+        <qualifiedname>TestClass::check_are_received_grades_the_same</qualifiedname>
+        <param>
+          <type><ref refid="classstudent" kindref="compound">student</ref> &amp;</type>
+          <declname>test_student</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; float &gt; &amp;</type>
+          <declname>temp_grades</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test_my_class.hpp" line="59" column="9" bodyfile="test_my_class.cpp" bodystart="845" bodyend="857"/>
+        <references refid="classstudent_1afb9505bad4424cd24c1c9c6ed9a8ae6b" compoundref="my__class_8cpp" startline="128" endline="136">student::getGrades</references>
+        <references refid="classstudent_1aeb0bd465659ab78523d480c3dbdb91c4" compoundref="my__class_8cpp" startline="60" endline="63">student::getNumberGrades</references>
+        <references refid="test__my__class_8cpp_1ab77e07f639edd98b5a62e3491ed487a3" compoundref="test__my__class_8cpp" startline="11">IS_TRUE</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="test_my_class.hpp" line="5" column="1" bodyfile="test_my_class.hpp" bodystart="6" bodyend="60"/>
+    <listofallmembers>
+      <member refid="class_test_class_1a0006f0a28764ef0cde04ca173650cc77" prot="public" virt="non-virtual"><scope>TestClass</scope><name>calculate_average</name></member>
+      <member refid="class_test_class_1a4386e8c4061b3c0192fd52f6699780d9" prot="public" virt="non-virtual"><scope>TestClass</scope><name>check_addNewGrade</name></member>
+      <member refid="class_test_class_1a06cdd6c8f5e4b7622d235597ed0997bc" prot="public" virt="non-virtual"><scope>TestClass</scope><name>check_are_received_grades_the_same</name></member>
+      <member refid="class_test_class_1a5220911e29eaf6083958229f540e095b" prot="public" virt="non-virtual"><scope>TestClass</scope><name>check_getName</name></member>
+      <member refid="class_test_class_1a8849cbe2d80fc994d137a25b7689ea78" prot="public" virt="non-virtual"><scope>TestClass</scope><name>check_setName</name></member>
+      <member refid="class_test_class_1abc94be115d46abbe7582b233a294bfce" prot="public" virt="non-virtual"><scope>TestClass</scope><name>check_setNumber</name></member>
+      <member refid="class_test_class_1aa8eb54e569c7b82eddb4faa1c84b5434" prot="public" virt="non-virtual"><scope>TestClass</scope><name>check_try_catch_getNumber</name></member>
+      <member refid="class_test_class_1ad1018f29c78f7ec47a8c923b848a1495" prot="public" virt="non-virtual"><scope>TestClass</scope><name>fill_with_random_grades</name></member>
+      <member refid="class_test_class_1a1fc239a01b6ce4631d32f00ee0a869fb" prot="private" virt="non-virtual"><scope>TestClass</scope><name>grades</name></member>
+      <member refid="class_test_class_1a95cd519692392559626675ea4c00778d" prot="private" virt="non-virtual"><scope>TestClass</scope><name>name</name></member>
+      <member refid="class_test_class_1a8def70f9b94b89a71ce78520bc13b4b7" prot="private" virt="non-virtual"><scope>TestClass</scope><name>number</name></member>
+      <member refid="class_test_class_1a0d6c1bea20532835f675b8b8849f5beb" prot="private" virt="non-virtual"><scope>TestClass</scope><name>sum</name></member>
+      <member refid="class_test_class_1a160cc248df643477304eea8252339e17" prot="public" virt="non-virtual"><scope>TestClass</scope><name>test_addNewGrade</name></member>
+      <member refid="class_test_class_1a3e5dd2e82e2205841f63f2a822c749b8" prot="public" virt="non-virtual"><scope>TestClass</scope><name>test_getAverageGrade</name></member>
+      <member refid="class_test_class_1a38edab9e106cf75180805eb092feb9c5" prot="public" virt="non-virtual"><scope>TestClass</scope><name>test_getGrades</name></member>
+      <member refid="class_test_class_1acb6a86dccf2a6b72de6984a50fa815c5" prot="public" virt="non-virtual"><scope>TestClass</scope><name>test_getMaxGrade</name></member>
+      <member refid="class_test_class_1ac5ae467fa892e345b59517b7be11741b" prot="public" virt="non-virtual"><scope>TestClass</scope><name>test_getMinGrade</name></member>
+      <member refid="class_test_class_1afb9755c703e20757d036f2f704515392" prot="public" virt="non-virtual"><scope>TestClass</scope><name>test_getName</name></member>
+      <member refid="class_test_class_1ac7022e0ec096e0c93103acde04be3c74" prot="public" virt="non-virtual"><scope>TestClass</scope><name>test_getNumber</name></member>
+      <member refid="class_test_class_1a51a2c92494f26f7c449ca55c0a33ac4e" prot="public" virt="non-virtual"><scope>TestClass</scope><name>test_invalid_addNewGrade</name></member>
+      <member refid="class_test_class_1a004fba1a5acbd0fa124423991cdbecc6" prot="public" virt="non-virtual"><scope>TestClass</scope><name>test_invalid_getAverageGrade</name></member>
+      <member refid="class_test_class_1a6e0c6406c513975c15c681592a40f29b" prot="public" virt="non-virtual"><scope>TestClass</scope><name>test_invalid_getGrades</name></member>
+      <member refid="class_test_class_1a3be3e0d4dfd31fbf8815911ccd6677de" prot="public" virt="non-virtual"><scope>TestClass</scope><name>test_invalid_getMaxGrade</name></member>
+      <member refid="class_test_class_1abcc1dc08418b6442972dce609f7b0baa" prot="public" virt="non-virtual"><scope>TestClass</scope><name>test_invalid_getMinGrade</name></member>
+      <member refid="class_test_class_1af8c3e3d546e53b0aefa473a55cf8de9c" prot="public" virt="non-virtual"><scope>TestClass</scope><name>test_invalid_getName</name></member>
+      <member refid="class_test_class_1aa030f38a05c8b80ee00ee0867b5f0177" prot="public" virt="non-virtual"><scope>TestClass</scope><name>test_invalid_getNumber</name></member>
+      <member refid="class_test_class_1af58b4f2a4bd4e275cd7d442a6d577ac6" prot="public" virt="non-virtual"><scope>TestClass</scope><name>test_invalid_setName</name></member>
+      <member refid="class_test_class_1a4e70e9bb23c42c76f6b51094d94af7b8" prot="public" virt="non-virtual"><scope>TestClass</scope><name>test_invalid_setNumber</name></member>
+      <member refid="class_test_class_1aafc888ca6e42adec762d1419507962e6" prot="public" virt="non-virtual"><scope>TestClass</scope><name>test_setName</name></member>
+      <member refid="class_test_class_1a4f999d196c8a0aa5da1e3f16d4b773ea" prot="public" virt="non-virtual"><scope>TestClass</scope><name>test_setNumber</name></member>
+      <member refid="class_test_class_1a1be405fb18449c3872587853f9a52e57" prot="public" virt="non-virtual"><scope>TestClass</scope><name>test_valid_addNewGrade</name></member>
+      <member refid="class_test_class_1a5bce40ccf7736fbc388a88b45ecc837a" prot="public" virt="non-virtual"><scope>TestClass</scope><name>test_valid_getAverageGrade</name></member>
+      <member refid="class_test_class_1ace77fb00ebaebd507b054de203970c46" prot="public" virt="non-virtual"><scope>TestClass</scope><name>test_valid_getGrades</name></member>
+      <member refid="class_test_class_1a865aecb24079358f3c4caaae4c82f2bf" prot="public" virt="non-virtual"><scope>TestClass</scope><name>test_valid_getMaxGrade</name></member>
+      <member refid="class_test_class_1a77b1e67cf0fd08474cf36ebb58a5ae96" prot="public" virt="non-virtual"><scope>TestClass</scope><name>test_valid_getMinGrade</name></member>
+      <member refid="class_test_class_1aa3f746240e971dbd4ca997e0ff565dd4" prot="public" virt="non-virtual"><scope>TestClass</scope><name>test_valid_getName</name></member>
+      <member refid="class_test_class_1aeccdc78fdf91ccc1ff2e49ed312a17c7" prot="public" virt="non-virtual"><scope>TestClass</scope><name>test_valid_getNumber</name></member>
+      <member refid="class_test_class_1a21faf8377ce1d26285d1d18eb53fc5ce" prot="public" virt="non-virtual"><scope>TestClass</scope><name>test_valid_setName</name></member>
+      <member refid="class_test_class_1a99b9f14083e34cbdbe07040bb8dc7279" prot="public" virt="non-virtual"><scope>TestClass</scope><name>test_valid_setNumber</name></member>
+      <member refid="class_test_class_1a09903432ed60c7c38f1beccc4cf18987" prot="public" virt="non-virtual"><scope>TestClass</scope><name>TestClass</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
