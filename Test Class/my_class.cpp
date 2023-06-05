@@ -12,7 +12,7 @@
 #include "my_class.h"
 #include <iostream>
 
-student::student(const int num, const std::string& full_name)
+Student::Student(const int num, const std::string& full_name)
 {
    number = num;
    if(isValidName(full_name))
@@ -26,12 +26,12 @@ student::student(const int num, const std::string& full_name)
    grades.reserve(MIN_GRADES);
 }
 
-bool student::isValidGrade(const float grade)
+bool Student::isValidGrade(const float grade)
 {
    return (grade >= LOWEST_GRADE && grade <= HIGHEST_GRADE);
 }
 
-bool student::isValidName(const std::string& new_name)
+bool Student::isValidName(const std::string& new_name)
 {
    for(char ch : new_name)
    {
@@ -43,22 +43,22 @@ bool student::isValidName(const std::string& new_name)
    return true;
 }
 
-int student::getNumber()
+int Student::getNumber()
 {
    return number;
 }
 
-std::string student::getName()
+std::string Student::getName()
 {
    return name;
 }
 
-void student::setNumber(int num)
+void Student::setNumber(int num)
 {
    number = num;
 }
 
-void student::setName(const std::string& new_name)
+void Student::setName(const std::string& new_name)
 {
    if(!isValidName(new_name))
    {
@@ -68,12 +68,12 @@ void student::setName(const std::string& new_name)
    name = new_name;
 }
     
-int student::getNumberGrades()
+int Student::getNumberGrades()
 {
    return grades.size();
 }
 
-void student::addNewGrade(float grade)
+void Student::addNewGrade(float grade)
 {
    if(getNumberGrades() == MAX_GRADES)
    {
@@ -88,12 +88,12 @@ void student::addNewGrade(float grade)
    sum += grade;
 }
 
-bool student::areGradesRecieved()
+bool Student::areGradesRecieved()
 {
    return (!grades.empty());
 }
 
-float student::getAverageGrade()
+float Student::getAverageGrade()
 {
    if(!areGradesRecieved())
    {
@@ -102,7 +102,7 @@ float student::getAverageGrade()
    return (sum / getNumberGrades());
 }
 
-float student::getMaxGrade()
+float Student::getMaxGrade()
 {
    if(!areGradesRecieved())
    {
@@ -119,7 +119,7 @@ float student::getMaxGrade()
    return maxGrade;
 }
 
-float student::getMinGrade()
+float Student::getMinGrade()
 {
    if(!areGradesRecieved())
    {
@@ -136,7 +136,7 @@ float student::getMinGrade()
    return minGrade;
 }
 
-std::vector<float> student::getGrades()
+std::vector<float> Student::getGrades()
 {
    for (auto it = grades.begin(); it != grades.end(); ++it)
    {

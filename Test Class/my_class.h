@@ -19,7 +19,7 @@ const int MIN_GRADES = 5;
 const int MAX_GRADES = 20;
 const float LOWEST_GRADE = 2.f;
 const float HIGHEST_GRADE = 6.f;
-class student
+class Student
 {
    std::string name{};
    int number{};
@@ -29,7 +29,7 @@ class student
    bool isValidGrade(const float grade);
 
    public:
-   student(const int num, const std::string& full_name);
+   Student(const int num, const std::string& full_name);
 
    int getNumber();
    std::string getName();

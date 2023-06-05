@@ -48,18 +48,18 @@ class TestClass
    void test_addNewGrade();
    void test_valid_addNewGrade();
    void test_invalid_addNewGrade();
-   void check_addNewGrade(student& test_student, const float grade);
+   void check_addNewGrade(Student& test_student, const float grade);
    
    void test_getAverageGrade();
    void test_valid_getAverageGrade();
    void test_invalid_getAverageGrade();
-   float calculate_average(std::vector<float>& grades);
+   float calculate_average(const std::vector<float>& grades);
 
    void test_getMinGrade();
    void test_valid_getMinGrade();
    void test_invalid_getMinGrade();
 
-   void fill_with_random_grades(student& test_student);
+   void fill_with_random_grades(Student& test_student);
    void test_getMaxGrade();
    void test_valid_getMaxGrade();
    void test_invalid_getMaxGrade();
@@ -67,5 +67,5 @@ class TestClass
    void test_getGrades();
    void test_valid_getGrades();
    void test_invalid_getGrades();
-   void check_are_received_grades_the_same(student& test_student, std::vector<float>& temp_grades);
+   void check_are_received_grades_the_same(Student& test_student, const std::vector<float>& temp_grades);
 };
